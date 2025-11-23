@@ -1,0 +1,1634 @@
+
+#################################################################
+Running experiments for: ./MVM_sequential  (sequential mode)
+#################################################################
+
+========================================
+Matrix: ./1138_bus.txt
+========================================
+Sequential | 90th percentile: 0.008 ms
+
+========================================
+Matrix: ./adder_dcop_32.txt
+========================================
+Sequential | 90th percentile: 0.017 ms
+
+========================================
+Matrix: ./bcsstk14.txt
+========================================
+Sequential | 90th percentile: 0.044 ms
+
+========================================
+Matrix: ./rail_5177.txt
+========================================
+Sequential | 90th percentile: 0.025 ms
+
+========================================
+Matrix: ./chimera_matrix.txt
+========================================
+Sequential | 90th percentile: 1.378 ms
+
+
+#################################################################
+Running experiments for: ./MVM_parallel  (parallel mode)
+#################################################################
+
+========================================
+Matrix: ./1138_bus.txt
+========================================
+Schedule: static  | Threads: 2  | Chunk: 1   | 90th percentile: 0.026611 ms
+Schedule: static  | Threads: 2  | Chunk: 2   | 90th percentile: 0.011475 ms
+Schedule: static  | Threads: 2  | Chunk: 4   | 90th percentile: 0.008789 ms
+Schedule: static  | Threads: 2  | Chunk: 8   | 90th percentile: 0.006592 ms
+Schedule: static  | Threads: 2  | Chunk: 16  | 90th percentile: 0.005859 ms
+Schedule: static  | Threads: 2  | Chunk: 32  | 90th percentile: 0.005371 ms
+Schedule: static  | Threads: 4  | Chunk: 1   | 90th percentile: 0.012939 ms
+Schedule: static  | Threads: 4  | Chunk: 2   | 90th percentile: 0.010986 ms
+Schedule: static  | Threads: 4  | Chunk: 4   | 90th percentile: 0.007324 ms
+Schedule: static  | Threads: 4  | Chunk: 8   | 90th percentile: 0.008301 ms
+Schedule: static  | Threads: 4  | Chunk: 16  | 90th percentile: 0.005615 ms
+Schedule: static  | Threads: 4  | Chunk: 32  | 90th percentile: 0.006104 ms
+Schedule: static  | Threads: 8  | Chunk: 1   | 90th percentile: 0.007812 ms
+Schedule: static  | Threads: 8  | Chunk: 2   | 90th percentile: 0.006104 ms
+Schedule: static  | Threads: 8  | Chunk: 4   | 90th percentile: 0.004883 ms
+Schedule: static  | Threads: 8  | Chunk: 8   | 90th percentile: 0.005127 ms
+Schedule: static  | Threads: 8  | Chunk: 16  | 90th percentile: 0.005615 ms
+Schedule: static  | Threads: 8  | Chunk: 32  | 90th percentile: 0.004150 ms
+Schedule: static  | Threads: 16 | Chunk: 1   | 90th percentile: 0.658203 ms
+Schedule: static  | Threads: 16 | Chunk: 2   | 90th percentile: 0.668701 ms
+Schedule: static  | Threads: 16 | Chunk: 4   | 90th percentile: 0.647949 ms
+Schedule: static  | Threads: 16 | Chunk: 8   | 90th percentile: 0.614014 ms
+Schedule: static  | Threads: 16 | Chunk: 16  | 90th percentile: 0.642090 ms
+Schedule: static  | Threads: 16 | Chunk: 32  | 90th percentile: 0.638428 ms
+Schedule: static  | Threads: 32 | Chunk: 1   | 90th percentile: 1.260986 ms
+Schedule: static  | Threads: 32 | Chunk: 2   | 90th percentile: 1.204834 ms
+Schedule: static  | Threads: 32 | Chunk: 4   | 90th percentile: 1.270996 ms
+Schedule: static  | Threads: 32 | Chunk: 8   | 90th percentile: 1.401855 ms
+Schedule: static  | Threads: 32 | Chunk: 16  | 90th percentile: 1.268066 ms
+Schedule: static  | Threads: 32 | Chunk: 32  | 90th percentile: 1.444824 ms
+Schedule: dynamic | Threads: 2  | Chunk: 1   | 90th percentile: 0.039307 ms
+Schedule: dynamic | Threads: 2  | Chunk: 2   | 90th percentile: 0.021973 ms
+Schedule: dynamic | Threads: 2  | Chunk: 4   | 90th percentile: 0.014160 ms
+Schedule: dynamic | Threads: 2  | Chunk: 8   | 90th percentile: 0.010254 ms
+Schedule: dynamic | Threads: 2  | Chunk: 16  | 90th percentile: 0.008301 ms
+Schedule: dynamic | Threads: 2  | Chunk: 32  | 90th percentile: 0.007324 ms
+Schedule: dynamic | Threads: 4  | Chunk: 1   | 90th percentile: 0.035645 ms
+Schedule: dynamic | Threads: 4  | Chunk: 2   | 90th percentile: 0.017334 ms
+Schedule: dynamic | Threads: 4  | Chunk: 4   | 90th percentile: 0.010742 ms
+Schedule: dynamic | Threads: 4  | Chunk: 8   | 90th percentile: 0.007568 ms
+Schedule: dynamic | Threads: 4  | Chunk: 16  | 90th percentile: 0.006348 ms
+Schedule: dynamic | Threads: 4  | Chunk: 32  | 90th percentile: 0.005127 ms
+Schedule: dynamic | Threads: 8  | Chunk: 1   | 90th percentile: 0.033691 ms
+Schedule: dynamic | Threads: 8  | Chunk: 2   | 90th percentile: 0.018311 ms
+Schedule: dynamic | Threads: 8  | Chunk: 4   | 90th percentile: 0.010010 ms
+Schedule: dynamic | Threads: 8  | Chunk: 8   | 90th percentile: 0.011475 ms
+Schedule: dynamic | Threads: 8  | Chunk: 16  | 90th percentile: 0.005371 ms
+Schedule: dynamic | Threads: 8  | Chunk: 32  | 90th percentile: 0.004395 ms
+Schedule: dynamic | Threads: 16 | Chunk: 1   | 90th percentile: 0.658447 ms
+Schedule: dynamic | Threads: 16 | Chunk: 2   | 90th percentile: 0.625488 ms
+Schedule: dynamic | Threads: 16 | Chunk: 4   | 90th percentile: 0.603271 ms
+Schedule: dynamic | Threads: 16 | Chunk: 8   | 90th percentile: 0.598145 ms
+Schedule: dynamic | Threads: 16 | Chunk: 16  | 90th percentile: 0.642334 ms
+Schedule: dynamic | Threads: 16 | Chunk: 32  | 90th percentile: 0.655762 ms
+Schedule: dynamic | Threads: 32 | Chunk: 1   | 90th percentile: 1.193604 ms
+Schedule: dynamic | Threads: 32 | Chunk: 2   | 90th percentile: 1.185303 ms
+Schedule: dynamic | Threads: 32 | Chunk: 4   | 90th percentile: 1.197510 ms
+Schedule: dynamic | Threads: 32 | Chunk: 8   | 90th percentile: 1.293701 ms
+Schedule: dynamic | Threads: 32 | Chunk: 16  | 90th percentile: 1.217285 ms
+Schedule: dynamic | Threads: 32 | Chunk: 32  | 90th percentile: 1.230225 ms
+Schedule: guided  | Threads: 2  | Chunk: 1   | 90th percentile: 0.004883 ms
+Schedule: guided  | Threads: 2  | Chunk: 2   | 90th percentile: 0.004883 ms
+Schedule: guided  | Threads: 2  | Chunk: 4   | 90th percentile: 0.004883 ms
+Schedule: guided  | Threads: 2  | Chunk: 8   | 90th percentile: 0.005615 ms
+Schedule: guided  | Threads: 2  | Chunk: 16  | 90th percentile: 0.005127 ms
+Schedule: guided  | Threads: 2  | Chunk: 32  | 90th percentile: 0.004883 ms
+Schedule: guided  | Threads: 4  | Chunk: 1   | 90th percentile: 0.005615 ms
+Schedule: guided  | Threads: 4  | Chunk: 2   | 90th percentile: 0.005859 ms
+Schedule: guided  | Threads: 4  | Chunk: 4   | 90th percentile: 0.005859 ms
+Schedule: guided  | Threads: 4  | Chunk: 8   | 90th percentile: 0.004883 ms
+Schedule: guided  | Threads: 4  | Chunk: 16  | 90th percentile: 0.004883 ms
+Schedule: guided  | Threads: 4  | Chunk: 32  | 90th percentile: 0.005371 ms
+Schedule: guided  | Threads: 8  | Chunk: 1   | 90th percentile: 0.007812 ms
+Schedule: guided  | Threads: 8  | Chunk: 2   | 90th percentile: 0.010742 ms
+Schedule: guided  | Threads: 8  | Chunk: 4   | 90th percentile: 0.006836 ms
+Schedule: guided  | Threads: 8  | Chunk: 8   | 90th percentile: 0.005859 ms
+Schedule: guided  | Threads: 8  | Chunk: 16  | 90th percentile: 0.005127 ms
+Schedule: guided  | Threads: 8  | Chunk: 32  | 90th percentile: 0.004639 ms
+Schedule: guided  | Threads: 16 | Chunk: 1   | 90th percentile: 0.673096 ms
+Schedule: guided  | Threads: 16 | Chunk: 2   | 90th percentile: 0.740234 ms
+Schedule: guided  | Threads: 16 | Chunk: 4   | 90th percentile: 0.639160 ms
+Schedule: guided  | Threads: 16 | Chunk: 8   | 90th percentile: 0.618652 ms
+Schedule: guided  | Threads: 16 | Chunk: 16  | 90th percentile: 0.703857 ms
+Schedule: guided  | Threads: 16 | Chunk: 32  | 90th percentile: 0.641357 ms
+Schedule: guided  | Threads: 32 | Chunk: 1   | 90th percentile: 1.217285 ms
+Schedule: guided  | Threads: 32 | Chunk: 2   | 90th percentile: 1.229736 ms
+Schedule: guided  | Threads: 32 | Chunk: 4   | 90th percentile: 1.228027 ms
+Schedule: guided  | Threads: 32 | Chunk: 8   | 90th percentile: 1.249268 ms
+Schedule: guided  | Threads: 32 | Chunk: 16  | 90th percentile: 1.182861 ms
+Schedule: guided  | Threads: 32 | Chunk: 32  | 90th percentile: 1.238281 ms
+
+========================================
+Matrix: ./adder_dcop_32.txt
+========================================
+Schedule: static  | Threads: 2  | Chunk: 1   | 90th percentile: 0.030518 ms
+Schedule: static  | Threads: 2  | Chunk: 2   | 90th percentile: 0.020752 ms
+Schedule: static  | Threads: 2  | Chunk: 4   | 90th percentile: 0.016602 ms
+Schedule: static  | Threads: 2  | Chunk: 8   | 90th percentile: 0.017578 ms
+Schedule: static  | Threads: 2  | Chunk: 16  | 90th percentile: 0.013184 ms
+Schedule: static  | Threads: 2  | Chunk: 32  | 90th percentile: 0.014648 ms
+Schedule: static  | Threads: 4  | Chunk: 1   | 90th percentile: 0.023926 ms
+Schedule: static  | Threads: 4  | Chunk: 2   | 90th percentile: 0.016846 ms
+Schedule: static  | Threads: 4  | Chunk: 4   | 90th percentile: 0.014893 ms
+Schedule: static  | Threads: 4  | Chunk: 8   | 90th percentile: 0.011475 ms
+Schedule: static  | Threads: 4  | Chunk: 16  | 90th percentile: 0.011230 ms
+Schedule: static  | Threads: 4  | Chunk: 32  | 90th percentile: 0.009033 ms
+Schedule: static  | Threads: 8  | Chunk: 1   | 90th percentile: 0.013916 ms
+Schedule: static  | Threads: 8  | Chunk: 2   | 90th percentile: 0.010986 ms
+Schedule: static  | Threads: 8  | Chunk: 4   | 90th percentile: 0.009277 ms
+Schedule: static  | Threads: 8  | Chunk: 8   | 90th percentile: 0.008301 ms
+Schedule: static  | Threads: 8  | Chunk: 16  | 90th percentile: 0.008057 ms
+Schedule: static  | Threads: 8  | Chunk: 32  | 90th percentile: 0.009033 ms
+Schedule: static  | Threads: 16 | Chunk: 1   | 90th percentile: 0.698730 ms
+Schedule: static  | Threads: 16 | Chunk: 2   | 90th percentile: 0.692871 ms
+Schedule: static  | Threads: 16 | Chunk: 4   | 90th percentile: 0.646729 ms
+Schedule: static  | Threads: 16 | Chunk: 8   | 90th percentile: 0.811768 ms
+Schedule: static  | Threads: 16 | Chunk: 16  | 90th percentile: 0.674316 ms
+Schedule: static  | Threads: 16 | Chunk: 32  | 90th percentile: 0.771240 ms
+Schedule: static  | Threads: 32 | Chunk: 1   | 90th percentile: 1.238281 ms
+Schedule: static  | Threads: 32 | Chunk: 2   | 90th percentile: 1.320312 ms
+Schedule: static  | Threads: 32 | Chunk: 4   | 90th percentile: 1.328613 ms
+Schedule: static  | Threads: 32 | Chunk: 8   | 90th percentile: 1.291260 ms
+Schedule: static  | Threads: 32 | Chunk: 16  | 90th percentile: 1.824463 ms
+Schedule: static  | Threads: 32 | Chunk: 32  | 90th percentile: 1.175781 ms
+Schedule: dynamic | Threads: 2  | Chunk: 1   | 90th percentile: 0.069336 ms
+Schedule: dynamic | Threads: 2  | Chunk: 2   | 90th percentile: 0.037109 ms
+Schedule: dynamic | Threads: 2  | Chunk: 4   | 90th percentile: 0.027588 ms
+Schedule: dynamic | Threads: 2  | Chunk: 8   | 90th percentile: 0.020508 ms
+Schedule: dynamic | Threads: 2  | Chunk: 16  | 90th percentile: 0.015625 ms
+Schedule: dynamic | Threads: 2  | Chunk: 32  | 90th percentile: 0.014893 ms
+Schedule: dynamic | Threads: 4  | Chunk: 1   | 90th percentile: 0.060303 ms
+Schedule: dynamic | Threads: 4  | Chunk: 2   | 90th percentile: 0.028564 ms
+Schedule: dynamic | Threads: 4  | Chunk: 4   | 90th percentile: 0.020264 ms
+Schedule: dynamic | Threads: 4  | Chunk: 8   | 90th percentile: 0.014648 ms
+Schedule: dynamic | Threads: 4  | Chunk: 16  | 90th percentile: 0.012695 ms
+Schedule: dynamic | Threads: 4  | Chunk: 32  | 90th percentile: 0.012207 ms
+Schedule: dynamic | Threads: 8  | Chunk: 1   | 90th percentile: 0.051270 ms
+Schedule: dynamic | Threads: 8  | Chunk: 2   | 90th percentile: 0.029053 ms
+Schedule: dynamic | Threads: 8  | Chunk: 4   | 90th percentile: 0.037598 ms
+Schedule: dynamic | Threads: 8  | Chunk: 8   | 90th percentile: 3.586426 ms
+Schedule: dynamic | Threads: 8  | Chunk: 16  | 90th percentile: 0.010254 ms
+Schedule: dynamic | Threads: 8  | Chunk: 32  | 90th percentile: 0.010010 ms
+Schedule: dynamic | Threads: 16 | Chunk: 1   | 90th percentile: 1.009766 ms
+Schedule: dynamic | Threads: 16 | Chunk: 2   | 90th percentile: 0.610596 ms
+Schedule: dynamic | Threads: 16 | Chunk: 4   | 90th percentile: 0.646729 ms
+Schedule: dynamic | Threads: 16 | Chunk: 8   | 90th percentile: 0.675049 ms
+Schedule: dynamic | Threads: 16 | Chunk: 16  | 90th percentile: 0.670410 ms
+Schedule: dynamic | Threads: 16 | Chunk: 32  | 90th percentile: 0.716309 ms
+Schedule: dynamic | Threads: 32 | Chunk: 1   | 90th percentile: 1.280273 ms
+Schedule: dynamic | Threads: 32 | Chunk: 2   | 90th percentile: 1.413818 ms
+Schedule: dynamic | Threads: 32 | Chunk: 4   | 90th percentile: 1.305664 ms
+Schedule: dynamic | Threads: 32 | Chunk: 8   | 90th percentile: 1.280029 ms
+Schedule: dynamic | Threads: 32 | Chunk: 16  | 90th percentile: 1.284912 ms
+Schedule: dynamic | Threads: 32 | Chunk: 32  | 90th percentile: 1.304932 ms
+Schedule: guided  | Threads: 2  | Chunk: 1   | 90th percentile: 0.012207 ms
+Schedule: guided  | Threads: 2  | Chunk: 2   | 90th percentile: 0.012451 ms
+Schedule: guided  | Threads: 2  | Chunk: 4   | 90th percentile: 0.012695 ms
+Schedule: guided  | Threads: 2  | Chunk: 8   | 90th percentile: 0.012695 ms
+Schedule: guided  | Threads: 2  | Chunk: 16  | 90th percentile: 0.012695 ms
+Schedule: guided  | Threads: 2  | Chunk: 32  | 90th percentile: 0.012939 ms
+Schedule: guided  | Threads: 4  | Chunk: 1   | 90th percentile: 0.010498 ms
+Schedule: guided  | Threads: 4  | Chunk: 2   | 90th percentile: 0.010986 ms
+Schedule: guided  | Threads: 4  | Chunk: 4   | 90th percentile: 0.010742 ms
+Schedule: guided  | Threads: 4  | Chunk: 8   | 90th percentile: 0.010010 ms
+Schedule: guided  | Threads: 4  | Chunk: 16  | 90th percentile: 0.009521 ms
+Schedule: guided  | Threads: 4  | Chunk: 32  | 90th percentile: 0.009766 ms
+Schedule: guided  | Threads: 8  | Chunk: 1   | 90th percentile: 0.011230 ms
+Schedule: guided  | Threads: 8  | Chunk: 2   | 90th percentile: 0.010742 ms
+Schedule: guided  | Threads: 8  | Chunk: 4   | 90th percentile: 0.010010 ms
+Schedule: guided  | Threads: 8  | Chunk: 8   | 90th percentile: 0.009277 ms
+Schedule: guided  | Threads: 8  | Chunk: 16  | 90th percentile: 0.008545 ms
+Schedule: guided  | Threads: 8  | Chunk: 32  | 90th percentile: 0.008057 ms
+Schedule: guided  | Threads: 16 | Chunk: 1   | 90th percentile: 0.598145 ms
+Schedule: guided  | Threads: 16 | Chunk: 2   | 90th percentile: 0.651123 ms
+Schedule: guided  | Threads: 16 | Chunk: 4   | 90th percentile: 0.620850 ms
+Schedule: guided  | Threads: 16 | Chunk: 8   | 90th percentile: 0.613770 ms
+Schedule: guided  | Threads: 16 | Chunk: 16  | 90th percentile: 0.629883 ms
+Schedule: guided  | Threads: 16 | Chunk: 32  | 90th percentile: 0.765137 ms
+Schedule: guided  | Threads: 32 | Chunk: 1   | 90th percentile: 1.561279 ms
+Schedule: guided  | Threads: 32 | Chunk: 2   | 90th percentile: 1.493164 ms
+Schedule: guided  | Threads: 32 | Chunk: 4   | 90th percentile: 1.665283 ms
+Schedule: guided  | Threads: 32 | Chunk: 8   | 90th percentile: 1.764404 ms
+Schedule: guided  | Threads: 32 | Chunk: 16  | 90th percentile: 1.508545 ms
+Schedule: guided  | Threads: 32 | Chunk: 32  | 90th percentile: 1.693604 ms
+
+========================================
+Matrix: ./bcsstk14.txt
+========================================
+Schedule: static  | Threads: 2  | Chunk: 1   | 90th percentile: 0.036621 ms
+Schedule: static  | Threads: 2  | Chunk: 2   | 90th percentile: 0.039307 ms
+Schedule: static  | Threads: 2  | Chunk: 4   | 90th percentile: 0.024658 ms
+Schedule: static  | Threads: 2  | Chunk: 8   | 90th percentile: 0.022949 ms
+Schedule: static  | Threads: 2  | Chunk: 16  | 90th percentile: 0.021484 ms
+Schedule: static  | Threads: 2  | Chunk: 32  | 90th percentile: 0.043945 ms
+Schedule: static  | Threads: 4  | Chunk: 1   | 90th percentile: 0.028809 ms
+Schedule: static  | Threads: 4  | Chunk: 2   | 90th percentile: 0.023438 ms
+Schedule: static  | Threads: 4  | Chunk: 4   | 90th percentile: 0.019287 ms
+Schedule: static  | Threads: 4  | Chunk: 8   | 90th percentile: 0.017090 ms
+Schedule: static  | Threads: 4  | Chunk: 16  | 90th percentile: 0.016113 ms
+Schedule: static  | Threads: 4  | Chunk: 32  | 90th percentile: 0.015869 ms
+Schedule: static  | Threads: 8  | Chunk: 1   | 90th percentile: 0.018555 ms
+Schedule: static  | Threads: 8  | Chunk: 2   | 90th percentile: 0.014160 ms
+Schedule: static  | Threads: 8  | Chunk: 4   | 90th percentile: 0.012939 ms
+Schedule: static  | Threads: 8  | Chunk: 8   | 90th percentile: 0.011719 ms
+Schedule: static  | Threads: 8  | Chunk: 16  | 90th percentile: 0.010742 ms
+Schedule: static  | Threads: 8  | Chunk: 32  | 90th percentile: 0.010254 ms
+Schedule: static  | Threads: 16 | Chunk: 1   | 90th percentile: 0.651123 ms
+Schedule: static  | Threads: 16 | Chunk: 2   | 90th percentile: 0.680664 ms
+Schedule: static  | Threads: 16 | Chunk: 4   | 90th percentile: 0.707520 ms
+Schedule: static  | Threads: 16 | Chunk: 8   | 90th percentile: 0.680176 ms
+Schedule: static  | Threads: 16 | Chunk: 16  | 90th percentile: 0.625732 ms
+Schedule: static  | Threads: 16 | Chunk: 32  | 90th percentile: 0.625732 ms
+Schedule: static  | Threads: 32 | Chunk: 1   | 90th percentile: 1.251709 ms
+Schedule: static  | Threads: 32 | Chunk: 2   | 90th percentile: 1.222900 ms
+Schedule: static  | Threads: 32 | Chunk: 4   | 90th percentile: 1.317139 ms
+Schedule: static  | Threads: 32 | Chunk: 8   | 90th percentile: 1.222412 ms
+Schedule: static  | Threads: 32 | Chunk: 16  | 90th percentile: 1.272217 ms
+Schedule: static  | Threads: 32 | Chunk: 32  | 90th percentile: 1.210205 ms
+Schedule: dynamic | Threads: 2  | Chunk: 1   | 90th percentile: 0.076416 ms
+Schedule: dynamic | Threads: 2  | Chunk: 2   | 90th percentile: 0.039551 ms
+Schedule: dynamic | Threads: 2  | Chunk: 4   | 90th percentile: 0.031494 ms
+Schedule: dynamic | Threads: 2  | Chunk: 8   | 90th percentile: 0.025391 ms
+Schedule: dynamic | Threads: 2  | Chunk: 16  | 90th percentile: 0.022461 ms
+Schedule: dynamic | Threads: 2  | Chunk: 32  | 90th percentile: 0.020996 ms
+Schedule: dynamic | Threads: 4  | Chunk: 1   | 90th percentile: 0.055420 ms
+Schedule: dynamic | Threads: 4  | Chunk: 2   | 90th percentile: 0.029785 ms
+Schedule: dynamic | Threads: 4  | Chunk: 4   | 90th percentile: 0.021973 ms
+Schedule: dynamic | Threads: 4  | Chunk: 8   | 90th percentile: 0.016602 ms
+Schedule: dynamic | Threads: 4  | Chunk: 16  | 90th percentile: 0.016113 ms
+Schedule: dynamic | Threads: 4  | Chunk: 32  | 90th percentile: 0.013672 ms
+Schedule: dynamic | Threads: 8  | Chunk: 1   | 90th percentile: 0.039307 ms
+Schedule: dynamic | Threads: 8  | Chunk: 2   | 90th percentile: 0.024414 ms
+Schedule: dynamic | Threads: 8  | Chunk: 4   | 90th percentile: 0.028564 ms
+Schedule: dynamic | Threads: 8  | Chunk: 8   | 90th percentile: 0.012207 ms
+Schedule: dynamic | Threads: 8  | Chunk: 16  | 90th percentile: 0.010742 ms
+Schedule: dynamic | Threads: 8  | Chunk: 32  | 90th percentile: 0.010010 ms
+Schedule: dynamic | Threads: 16 | Chunk: 1   | 90th percentile: 0.604980 ms
+Schedule: dynamic | Threads: 16 | Chunk: 2   | 90th percentile: 0.643799 ms
+Schedule: dynamic | Threads: 16 | Chunk: 4   | 90th percentile: 0.663330 ms
+Schedule: dynamic | Threads: 16 | Chunk: 8   | 90th percentile: 0.716309 ms
+Schedule: dynamic | Threads: 16 | Chunk: 16  | 90th percentile: 0.686523 ms
+Schedule: dynamic | Threads: 16 | Chunk: 32  | 90th percentile: 0.626465 ms
+Schedule: dynamic | Threads: 32 | Chunk: 1   | 90th percentile: 1.205566 ms
+Schedule: dynamic | Threads: 32 | Chunk: 2   | 90th percentile: 1.449219 ms
+Schedule: dynamic | Threads: 32 | Chunk: 4   | 90th percentile: 1.346924 ms
+Schedule: dynamic | Threads: 32 | Chunk: 8   | 90th percentile: 1.241943 ms
+Schedule: dynamic | Threads: 32 | Chunk: 16  | 90th percentile: 1.330566 ms
+Schedule: dynamic | Threads: 32 | Chunk: 32  | 90th percentile: 1.378418 ms
+Schedule: guided  | Threads: 2  | Chunk: 1   | 90th percentile: 0.023438 ms
+Schedule: guided  | Threads: 2  | Chunk: 2   | 90th percentile: 0.029541 ms
+Schedule: guided  | Threads: 2  | Chunk: 4   | 90th percentile: 0.019531 ms
+Schedule: guided  | Threads: 2  | Chunk: 8   | 90th percentile: 0.019531 ms
+Schedule: guided  | Threads: 2  | Chunk: 16  | 90th percentile: 0.019287 ms
+Schedule: guided  | Threads: 2  | Chunk: 32  | 90th percentile: 0.022949 ms
+Schedule: guided  | Threads: 4  | Chunk: 1   | 90th percentile: 0.015625 ms
+Schedule: guided  | Threads: 4  | Chunk: 2   | 90th percentile: 0.017822 ms
+Schedule: guided  | Threads: 4  | Chunk: 4   | 90th percentile: 0.018066 ms
+Schedule: guided  | Threads: 4  | Chunk: 8   | 90th percentile: 0.017822 ms
+Schedule: guided  | Threads: 4  | Chunk: 16  | 90th percentile: 0.013672 ms
+Schedule: guided  | Threads: 4  | Chunk: 32  | 90th percentile: 0.014404 ms
+Schedule: guided  | Threads: 8  | Chunk: 1   | 90th percentile: 0.012451 ms
+Schedule: guided  | Threads: 8  | Chunk: 2   | 90th percentile: 0.012207 ms
+Schedule: guided  | Threads: 8  | Chunk: 4   | 90th percentile: 0.010742 ms
+Schedule: guided  | Threads: 8  | Chunk: 8   | 90th percentile: 0.010498 ms
+Schedule: guided  | Threads: 8  | Chunk: 16  | 90th percentile: 0.017578 ms
+Schedule: guided  | Threads: 8  | Chunk: 32  | 90th percentile: 0.010010 ms
+Schedule: guided  | Threads: 16 | Chunk: 1   | 90th percentile: 0.692627 ms
+Schedule: guided  | Threads: 16 | Chunk: 2   | 90th percentile: 0.765625 ms
+Schedule: guided  | Threads: 16 | Chunk: 4   | 90th percentile: 0.589111 ms
+Schedule: guided  | Threads: 16 | Chunk: 8   | 90th percentile: 0.637939 ms
+Schedule: guided  | Threads: 16 | Chunk: 16  | 90th percentile: 0.714600 ms
+Schedule: guided  | Threads: 16 | Chunk: 32  | 90th percentile: 0.629150 ms
+Schedule: guided  | Threads: 32 | Chunk: 1   | 90th percentile: 1.243896 ms
+Schedule: guided  | Threads: 32 | Chunk: 2   | 90th percentile: 1.272217 ms
+Schedule: guided  | Threads: 32 | Chunk: 4   | 90th percentile: 1.220215 ms
+Schedule: guided  | Threads: 32 | Chunk: 8   | 90th percentile: 1.316650 ms
+Schedule: guided  | Threads: 32 | Chunk: 16  | 90th percentile: 1.236816 ms
+Schedule: guided  | Threads: 32 | Chunk: 32  | 90th percentile: 1.274170 ms
+
+========================================
+Matrix: ./rail_5177.txt
+========================================
+Schedule: static  | Threads: 2  | Chunk: 1   | 90th percentile: 0.062988 ms
+Schedule: static  | Threads: 2  | Chunk: 2   | 90th percentile: 0.062500 ms
+Schedule: static  | Threads: 2  | Chunk: 4   | 90th percentile: 0.026855 ms
+Schedule: static  | Threads: 2  | Chunk: 8   | 90th percentile: 0.039062 ms
+Schedule: static  | Threads: 2  | Chunk: 16  | 90th percentile: 0.020752 ms
+Schedule: static  | Threads: 2  | Chunk: 32  | 90th percentile: 0.018555 ms
+Schedule: static  | Threads: 4  | Chunk: 1   | 90th percentile: 0.051514 ms
+Schedule: static  | Threads: 4  | Chunk: 2   | 90th percentile: 0.021484 ms
+Schedule: static  | Threads: 4  | Chunk: 4   | 90th percentile: 0.021484 ms
+Schedule: static  | Threads: 4  | Chunk: 8   | 90th percentile: 0.018799 ms
+Schedule: static  | Threads: 4  | Chunk: 16  | 90th percentile: 0.015381 ms
+Schedule: static  | Threads: 4  | Chunk: 32  | 90th percentile: 0.022461 ms
+Schedule: static  | Threads: 8  | Chunk: 1   | 90th percentile: 0.044189 ms
+Schedule: static  | Threads: 8  | Chunk: 2   | 90th percentile: 0.019531 ms
+Schedule: static  | Threads: 8  | Chunk: 4   | 90th percentile: 0.013184 ms
+Schedule: static  | Threads: 8  | Chunk: 8   | 90th percentile: 0.010254 ms
+Schedule: static  | Threads: 8  | Chunk: 16  | 90th percentile: 0.009521 ms
+Schedule: static  | Threads: 8  | Chunk: 32  | 90th percentile: 0.009033 ms
+Schedule: static  | Threads: 16 | Chunk: 1   | 90th percentile: 0.809082 ms
+Schedule: static  | Threads: 16 | Chunk: 2   | 90th percentile: 0.675781 ms
+Schedule: static  | Threads: 16 | Chunk: 4   | 90th percentile: 0.659424 ms
+Schedule: static  | Threads: 16 | Chunk: 8   | 90th percentile: 0.692383 ms
+Schedule: static  | Threads: 16 | Chunk: 16  | 90th percentile: 0.720459 ms
+Schedule: static  | Threads: 16 | Chunk: 32  | 90th percentile: 0.676514 ms
+Schedule: static  | Threads: 32 | Chunk: 1   | 90th percentile: 1.258301 ms
+Schedule: static  | Threads: 32 | Chunk: 2   | 90th percentile: 1.324707 ms
+Schedule: static  | Threads: 32 | Chunk: 4   | 90th percentile: 1.349365 ms
+Schedule: static  | Threads: 32 | Chunk: 8   | 90th percentile: 1.328125 ms
+Schedule: static  | Threads: 32 | Chunk: 16  | 90th percentile: 1.240479 ms
+Schedule: static  | Threads: 32 | Chunk: 32  | 90th percentile: 1.234131 ms
+Schedule: dynamic | Threads: 2  | Chunk: 1   | 90th percentile: 0.202637 ms
+Schedule: dynamic | Threads: 2  | Chunk: 2   | 90th percentile: 0.084229 ms
+Schedule: dynamic | Threads: 2  | Chunk: 4   | 90th percentile: 0.056641 ms
+Schedule: dynamic | Threads: 2  | Chunk: 8   | 90th percentile: 0.036133 ms
+Schedule: dynamic | Threads: 2  | Chunk: 16  | 90th percentile: 0.024658 ms
+Schedule: dynamic | Threads: 2  | Chunk: 32  | 90th percentile: 0.034180 ms
+Schedule: dynamic | Threads: 4  | Chunk: 1   | 90th percentile: 0.135254 ms
+Schedule: dynamic | Threads: 4  | Chunk: 2   | 90th percentile: 0.077393 ms
+Schedule: dynamic | Threads: 4  | Chunk: 4   | 90th percentile: 0.034912 ms
+Schedule: dynamic | Threads: 4  | Chunk: 8   | 90th percentile: 0.023926 ms
+Schedule: dynamic | Threads: 4  | Chunk: 16  | 90th percentile: 0.020508 ms
+Schedule: dynamic | Threads: 4  | Chunk: 32  | 90th percentile: 0.020264 ms
+Schedule: dynamic | Threads: 8  | Chunk: 1   | 90th percentile: 0.117676 ms
+Schedule: dynamic | Threads: 8  | Chunk: 2   | 90th percentile: 0.049561 ms
+Schedule: dynamic | Threads: 8  | Chunk: 4   | 90th percentile: 0.032471 ms
+Schedule: dynamic | Threads: 8  | Chunk: 8   | 90th percentile: 0.019775 ms
+Schedule: dynamic | Threads: 8  | Chunk: 16  | 90th percentile: 0.013916 ms
+Schedule: dynamic | Threads: 8  | Chunk: 32  | 90th percentile: 0.010498 ms
+Schedule: dynamic | Threads: 16 | Chunk: 1   | 90th percentile: 0.549561 ms
+Schedule: dynamic | Threads: 16 | Chunk: 2   | 90th percentile: 0.624023 ms
+Schedule: dynamic | Threads: 16 | Chunk: 4   | 90th percentile: 0.704834 ms
+Schedule: dynamic | Threads: 16 | Chunk: 8   | 90th percentile: 0.647949 ms
+Schedule: dynamic | Threads: 16 | Chunk: 16  | 90th percentile: 0.654541 ms
+Schedule: dynamic | Threads: 16 | Chunk: 32  | 90th percentile: 0.639404 ms
+Schedule: dynamic | Threads: 32 | Chunk: 1   | 90th percentile: 1.042725 ms
+Schedule: dynamic | Threads: 32 | Chunk: 2   | 90th percentile: 1.309326 ms
+Schedule: dynamic | Threads: 32 | Chunk: 4   | 90th percentile: 1.324951 ms
+Schedule: dynamic | Threads: 32 | Chunk: 8   | 90th percentile: 1.260986 ms
+Schedule: dynamic | Threads: 32 | Chunk: 16  | 90th percentile: 1.229248 ms
+Schedule: dynamic | Threads: 32 | Chunk: 32  | 90th percentile: 1.317383 ms
+Schedule: guided  | Threads: 2  | Chunk: 1   | 90th percentile: 0.024658 ms
+Schedule: guided  | Threads: 2  | Chunk: 2   | 90th percentile: 0.016846 ms
+Schedule: guided  | Threads: 2  | Chunk: 4   | 90th percentile: 0.016357 ms
+Schedule: guided  | Threads: 2  | Chunk: 8   | 90th percentile: 0.031006 ms
+Schedule: guided  | Threads: 2  | Chunk: 16  | 90th percentile: 0.017334 ms
+Schedule: guided  | Threads: 2  | Chunk: 32  | 90th percentile: 0.026855 ms
+Schedule: guided  | Threads: 4  | Chunk: 1   | 90th percentile: 0.012451 ms
+Schedule: guided  | Threads: 4  | Chunk: 2   | 90th percentile: 0.010986 ms
+Schedule: guided  | Threads: 4  | Chunk: 4   | 90th percentile: 0.011475 ms
+Schedule: guided  | Threads: 4  | Chunk: 8   | 90th percentile: 0.012939 ms
+Schedule: guided  | Threads: 4  | Chunk: 16  | 90th percentile: 0.010986 ms
+Schedule: guided  | Threads: 4  | Chunk: 32  | 90th percentile: 0.013672 ms
+Schedule: guided  | Threads: 8  | Chunk: 1   | 90th percentile: 0.011719 ms
+Schedule: guided  | Threads: 8  | Chunk: 2   | 90th percentile: 0.010986 ms
+Schedule: guided  | Threads: 8  | Chunk: 4   | 90th percentile: 0.010254 ms
+Schedule: guided  | Threads: 8  | Chunk: 8   | 90th percentile: 0.011475 ms
+Schedule: guided  | Threads: 8  | Chunk: 16  | 90th percentile: 0.009766 ms
+Schedule: guided  | Threads: 8  | Chunk: 32  | 90th percentile: 0.009277 ms
+Schedule: guided  | Threads: 16 | Chunk: 1   | 90th percentile: 0.719971 ms
+Schedule: guided  | Threads: 16 | Chunk: 2   | 90th percentile: 0.708252 ms
+Schedule: guided  | Threads: 16 | Chunk: 4   | 90th percentile: 0.649902 ms
+Schedule: guided  | Threads: 16 | Chunk: 8   | 90th percentile: 0.666260 ms
+Schedule: guided  | Threads: 16 | Chunk: 16  | 90th percentile: 0.782959 ms
+Schedule: guided  | Threads: 16 | Chunk: 32  | 90th percentile: 0.657471 ms
+Schedule: guided  | Threads: 32 | Chunk: 1   | 90th percentile: 1.353271 ms
+Schedule: guided  | Threads: 32 | Chunk: 2   | 90th percentile: 1.279785 ms
+Schedule: guided  | Threads: 32 | Chunk: 4   | 90th percentile: 1.329102 ms
+Schedule: guided  | Threads: 32 | Chunk: 8   | 90th percentile: 1.272217 ms
+Schedule: guided  | Threads: 32 | Chunk: 16  | 90th percentile: 1.415527 ms
+Schedule: guided  | Threads: 32 | Chunk: 32  | 90th percentile: 1.362549 ms
+
+========================================
+Matrix: ./chimera_matrix.txt
+========================================
+Schedule: static  | Threads: 2  | Chunk: 1   | 90th percentile: 1.649902 ms
+Schedule: static  | Threads: 2  | Chunk: 2   | 90th percentile: 1.206299 ms
+Schedule: static  | Threads: 2  | Chunk: 4   | 90th percentile: 1.038818 ms
+Schedule: static  | Threads: 2  | Chunk: 8   | 90th percentile: 0.909912 ms
+Schedule: static  | Threads: 2  | Chunk: 16  | 90th percentile: 0.828613 ms
+Schedule: static  | Threads: 2  | Chunk: 32  | 90th percentile: 0.807861 ms
+Schedule: static  | Threads: 4  | Chunk: 1   | 90th percentile: 1.244141 ms
+Schedule: static  | Threads: 4  | Chunk: 2   | 90th percentile: 0.827637 ms
+Schedule: static  | Threads: 4  | Chunk: 4   | 90th percentile: 0.603027 ms
+Schedule: static  | Threads: 4  | Chunk: 8   | 90th percentile: 0.632080 ms
+Schedule: static  | Threads: 4  | Chunk: 16  | 90th percentile: 0.596436 ms
+Schedule: static  | Threads: 4  | Chunk: 32  | 90th percentile: 0.548584 ms
+Schedule: static  | Threads: 8  | Chunk: 1   | 90th percentile: 0.828857 ms
+Schedule: static  | Threads: 8  | Chunk: 2   | 90th percentile: 1.576904 ms
+Schedule: static  | Threads: 8  | Chunk: 4   | 90th percentile: 0.640869 ms
+Schedule: static  | Threads: 8  | Chunk: 8   | 90th percentile: 0.683105 ms
+Schedule: static  | Threads: 8  | Chunk: 16  | 90th percentile: 0.937012 ms
+Schedule: static  | Threads: 8  | Chunk: 32  | 90th percentile: 0.545898 ms
+Schedule: static  | Threads: 16 | Chunk: 1   | 90th percentile: 1.554688 ms
+Schedule: static  | Threads: 16 | Chunk: 2   | 90th percentile: 1.115967 ms
+Schedule: static  | Threads: 16 | Chunk: 4   | 90th percentile: 1.055176 ms
+Schedule: static  | Threads: 16 | Chunk: 8   | 90th percentile: 1.066406 ms
+Schedule: static  | Threads: 16 | Chunk: 16  | 90th percentile: 0.817139 ms
+Schedule: static  | Threads: 16 | Chunk: 32  | 90th percentile: 0.958252 ms
+Schedule: static  | Threads: 32 | Chunk: 1   | 90th percentile: 2.039551 ms
+Schedule: static  | Threads: 32 | Chunk: 2   | 90th percentile: 1.346191 ms
+Schedule: static  | Threads: 32 | Chunk: 4   | 90th percentile: 1.385986 ms
+Schedule: static  | Threads: 32 | Chunk: 8   | 90th percentile: 0.981201 ms
+Schedule: static  | Threads: 32 | Chunk: 16  | 90th percentile: 0.947754 ms
+Schedule: static  | Threads: 32 | Chunk: 32  | 90th percentile: 0.799316 ms
+Schedule: dynamic | Threads: 2  | Chunk: 1   | 90th percentile: 4.127441 ms
+Schedule: dynamic | Threads: 2  | Chunk: 2   | 90th percentile: 2.275879 ms
+Schedule: dynamic | Threads: 2  | Chunk: 4   | 90th percentile: 1.525391 ms
+Schedule: dynamic | Threads: 2  | Chunk: 8   | 90th percentile: 1.103516 ms
+Schedule: dynamic | Threads: 2  | Chunk: 16  | 90th percentile: 0.846924 ms
+Schedule: dynamic | Threads: 2  | Chunk: 32  | 90th percentile: 0.799561 ms
+Schedule: dynamic | Threads: 4  | Chunk: 1   | 90th percentile: 3.254395 ms
+Schedule: dynamic | Threads: 4  | Chunk: 2   | 90th percentile: 1.659912 ms
+Schedule: dynamic | Threads: 4  | Chunk: 4   | 90th percentile: 1.136963 ms
+Schedule: dynamic | Threads: 4  | Chunk: 8   | 90th percentile: 0.747803 ms
+Schedule: dynamic | Threads: 4  | Chunk: 16  | 90th percentile: 0.612061 ms
+Schedule: dynamic | Threads: 4  | Chunk: 32  | 90th percentile: 0.469238 ms
+Schedule: dynamic | Threads: 8  | Chunk: 1   | 90th percentile: 2.728516 ms
+Schedule: dynamic | Threads: 8  | Chunk: 2   | 90th percentile: 6.303467 ms
+Schedule: dynamic | Threads: 8  | Chunk: 4   | 90th percentile: 0.858154 ms
+Schedule: dynamic | Threads: 8  | Chunk: 8   | 90th percentile: 0.741943 ms
+Schedule: dynamic | Threads: 8  | Chunk: 16  | 90th percentile: 0.702637 ms
+Schedule: dynamic | Threads: 8  | Chunk: 32  | 90th percentile: 0.394043 ms
+Schedule: dynamic | Threads: 16 | Chunk: 1   | 90th percentile: 2.916260 ms
+Schedule: dynamic | Threads: 16 | Chunk: 2   | 90th percentile: 1.603027 ms
+Schedule: dynamic | Threads: 16 | Chunk: 4   | 90th percentile: 1.144775 ms
+Schedule: dynamic | Threads: 16 | Chunk: 8   | 90th percentile: 0.779053 ms
+Schedule: dynamic | Threads: 16 | Chunk: 16  | 90th percentile: 0.683838 ms
+Schedule: dynamic | Threads: 16 | Chunk: 32  | 90th percentile: 0.620361 ms
+Schedule: dynamic | Threads: 32 | Chunk: 1   | 90th percentile: 3.288330 ms
+Schedule: dynamic | Threads: 32 | Chunk: 2   | 90th percentile: 1.664307 ms
+Schedule: dynamic | Threads: 32 | Chunk: 4   | 90th percentile: 0.975830 ms
+Schedule: dynamic | Threads: 32 | Chunk: 8   | 90th percentile: 0.867920 ms
+Schedule: dynamic | Threads: 32 | Chunk: 16  | 90th percentile: 0.673340 ms
+Schedule: dynamic | Threads: 32 | Chunk: 32  | 90th percentile: 0.633301 ms
+Schedule: guided  | Threads: 2  | Chunk: 1   | 90th percentile: 0.706299 ms
+Schedule: guided  | Threads: 2  | Chunk: 2   | 90th percentile: 0.643555 ms
+Schedule: guided  | Threads: 2  | Chunk: 4   | 90th percentile: 0.708740 ms
+Schedule: guided  | Threads: 2  | Chunk: 8   | 90th percentile: 0.707031 ms
+Schedule: guided  | Threads: 2  | Chunk: 16  | 90th percentile: 0.730713 ms
+Schedule: guided  | Threads: 2  | Chunk: 32  | 90th percentile: 0.664307 ms
+Schedule: guided  | Threads: 4  | Chunk: 1   | 90th percentile: 0.440674 ms
+Schedule: guided  | Threads: 4  | Chunk: 2   | 90th percentile: 0.414307 ms
+Schedule: guided  | Threads: 4  | Chunk: 4   | 90th percentile: 0.491211 ms
+Schedule: guided  | Threads: 4  | Chunk: 8   | 90th percentile: 0.504883 ms
+Schedule: guided  | Threads: 4  | Chunk: 16  | 90th percentile: 0.412109 ms
+Schedule: guided  | Threads: 4  | Chunk: 32  | 90th percentile: 1.404053 ms
+Schedule: guided  | Threads: 8  | Chunk: 1   | 90th percentile: 1.809814 ms
+Schedule: guided  | Threads: 8  | Chunk: 2   | 90th percentile: 0.933350 ms
+Schedule: guided  | Threads: 8  | Chunk: 4   | 90th percentile: 0.668213 ms
+Schedule: guided  | Threads: 8  | Chunk: 8   | 90th percentile: 3.719238 ms
+Schedule: guided  | Threads: 8  | Chunk: 16  | 90th percentile: 0.500488 ms
+Schedule: guided  | Threads: 8  | Chunk: 32  | 90th percentile: 3.072754 ms
+Schedule: guided  | Threads: 16 | Chunk: 1   | 90th percentile: 0.876953 ms
+Schedule: guided  | Threads: 16 | Chunk: 2   | 90th percentile: 0.977783 ms
+Schedule: guided  | Threads: 16 | Chunk: 4   | 90th percentile: 0.580811 ms
+Schedule: guided  | Threads: 16 | Chunk: 8   | 90th percentile: 0.775146 ms
+Schedule: guided  | Threads: 16 | Chunk: 16  | 90th percentile: 0.502441 ms
+Schedule: guided  | Threads: 16 | Chunk: 32  | 90th percentile: 0.530273 ms
+Schedule: guided  | Threads: 32 | Chunk: 1   | 90th percentile: 0.596680 ms
+Schedule: guided  | Threads: 32 | Chunk: 2   | 90th percentile: 0.550049 ms
+Schedule: guided  | Threads: 32 | Chunk: 4   | 90th percentile: 0.627686 ms
+Schedule: guided  | Threads: 32 | Chunk: 8   | 90th percentile: 0.648926 ms
+Schedule: guided  | Threads: 32 | Chunk: 16  | 90th percentile: 0.592041 ms
+Schedule: guided  | Threads: 32 | Chunk: 32  | 90th percentile: 0.620117 ms
+
+
+#################################################################
+Running experiments for: ./MVM_parallel_atomic  (parallel mode)
+#################################################################
+
+========================================
+Matrix: ./1138_bus.txt
+========================================
+Schedule: static  | Threads: 2  | Chunk: 1   | 90th percentile: 0.016357 ms
+Schedule: static  | Threads: 2  | Chunk: 2   | 90th percentile: 0.010254 ms
+Schedule: static  | Threads: 2  | Chunk: 4   | 90th percentile: 0.007812 ms
+Schedule: static  | Threads: 2  | Chunk: 8   | 90th percentile: 0.006348 ms
+Schedule: static  | Threads: 2  | Chunk: 16  | 90th percentile: 0.005859 ms
+Schedule: static  | Threads: 2  | Chunk: 32  | 90th percentile: 0.005371 ms
+Schedule: static  | Threads: 4  | Chunk: 1   | 90th percentile: 0.011719 ms
+Schedule: static  | Threads: 4  | Chunk: 2   | 90th percentile: 0.010498 ms
+Schedule: static  | Threads: 4  | Chunk: 4   | 90th percentile: 0.007080 ms
+Schedule: static  | Threads: 4  | Chunk: 8   | 90th percentile: 0.006836 ms
+Schedule: static  | Threads: 4  | Chunk: 16  | 90th percentile: 0.004395 ms
+Schedule: static  | Threads: 4  | Chunk: 32  | 90th percentile: 0.004395 ms
+Schedule: static  | Threads: 8  | Chunk: 1   | 90th percentile: 0.009521 ms
+Schedule: static  | Threads: 8  | Chunk: 2   | 90th percentile: 0.012695 ms
+Schedule: static  | Threads: 8  | Chunk: 4   | 90th percentile: 0.005127 ms
+Schedule: static  | Threads: 8  | Chunk: 8   | 90th percentile: 0.004639 ms
+Schedule: static  | Threads: 8  | Chunk: 16  | 90th percentile: 0.004150 ms
+Schedule: static  | Threads: 8  | Chunk: 32  | 90th percentile: 0.005371 ms
+Schedule: static  | Threads: 16 | Chunk: 1   | 90th percentile: 0.596191 ms
+Schedule: static  | Threads: 16 | Chunk: 2   | 90th percentile: 0.644531 ms
+Schedule: static  | Threads: 16 | Chunk: 4   | 90th percentile: 0.624023 ms
+Schedule: static  | Threads: 16 | Chunk: 8   | 90th percentile: 0.636230 ms
+Schedule: static  | Threads: 16 | Chunk: 16  | 90th percentile: 0.737793 ms
+Schedule: static  | Threads: 16 | Chunk: 32  | 90th percentile: 0.635254 ms
+Schedule: static  | Threads: 32 | Chunk: 1   | 90th percentile: 1.233643 ms
+Schedule: static  | Threads: 32 | Chunk: 2   | 90th percentile: 1.230225 ms
+Schedule: static  | Threads: 32 | Chunk: 4   | 90th percentile: 1.264404 ms
+Schedule: static  | Threads: 32 | Chunk: 8   | 90th percentile: 1.205322 ms
+Schedule: static  | Threads: 32 | Chunk: 16  | 90th percentile: 1.240967 ms
+Schedule: static  | Threads: 32 | Chunk: 32  | 90th percentile: 1.175537 ms
+Schedule: dynamic | Threads: 2  | Chunk: 1   | 90th percentile: 0.040771 ms
+Schedule: dynamic | Threads: 2  | Chunk: 2   | 90th percentile: 0.022461 ms
+Schedule: dynamic | Threads: 2  | Chunk: 4   | 90th percentile: 0.013916 ms
+Schedule: dynamic | Threads: 2  | Chunk: 8   | 90th percentile: 0.012695 ms
+Schedule: dynamic | Threads: 2  | Chunk: 16  | 90th percentile: 0.008057 ms
+Schedule: dynamic | Threads: 2  | Chunk: 32  | 90th percentile: 0.006348 ms
+Schedule: dynamic | Threads: 4  | Chunk: 1   | 90th percentile: 0.034912 ms
+Schedule: dynamic | Threads: 4  | Chunk: 2   | 90th percentile: 0.017334 ms
+Schedule: dynamic | Threads: 4  | Chunk: 4   | 90th percentile: 0.010986 ms
+Schedule: dynamic | Threads: 4  | Chunk: 8   | 90th percentile: 0.016357 ms
+Schedule: dynamic | Threads: 4  | Chunk: 16  | 90th percentile: 0.005859 ms
+Schedule: dynamic | Threads: 4  | Chunk: 32  | 90th percentile: 0.006348 ms
+Schedule: dynamic | Threads: 8  | Chunk: 1   | 90th percentile: 0.034668 ms
+Schedule: dynamic | Threads: 8  | Chunk: 2   | 90th percentile: 0.023193 ms
+Schedule: dynamic | Threads: 8  | Chunk: 4   | 90th percentile: 0.018066 ms
+Schedule: dynamic | Threads: 8  | Chunk: 8   | 90th percentile: 0.006348 ms
+Schedule: dynamic | Threads: 8  | Chunk: 16  | 90th percentile: 0.008545 ms
+Schedule: dynamic | Threads: 8  | Chunk: 32  | 90th percentile: 0.008057 ms
+Schedule: dynamic | Threads: 16 | Chunk: 1   | 90th percentile: 0.614746 ms
+Schedule: dynamic | Threads: 16 | Chunk: 2   | 90th percentile: 0.691406 ms
+Schedule: dynamic | Threads: 16 | Chunk: 4   | 90th percentile: 0.621826 ms
+Schedule: dynamic | Threads: 16 | Chunk: 8   | 90th percentile: 0.611328 ms
+Schedule: dynamic | Threads: 16 | Chunk: 16  | 90th percentile: 0.601318 ms
+Schedule: dynamic | Threads: 16 | Chunk: 32  | 90th percentile: 0.665039 ms
+Schedule: dynamic | Threads: 32 | Chunk: 1   | 90th percentile: 1.223633 ms
+Schedule: dynamic | Threads: 32 | Chunk: 2   | 90th percentile: 1.234131 ms
+Schedule: dynamic | Threads: 32 | Chunk: 4   | 90th percentile: 1.347900 ms
+Schedule: dynamic | Threads: 32 | Chunk: 8   | 90th percentile: 1.199951 ms
+Schedule: dynamic | Threads: 32 | Chunk: 16  | 90th percentile: 1.312744 ms
+Schedule: dynamic | Threads: 32 | Chunk: 32  | 90th percentile: 1.242920 ms
+Schedule: guided  | Threads: 2  | Chunk: 1   | 90th percentile: 0.005859 ms
+Schedule: guided  | Threads: 2  | Chunk: 2   | 90th percentile: 0.004883 ms
+Schedule: guided  | Threads: 2  | Chunk: 4   | 90th percentile: 0.005615 ms
+Schedule: guided  | Threads: 2  | Chunk: 8   | 90th percentile: 0.004639 ms
+Schedule: guided  | Threads: 2  | Chunk: 16  | 90th percentile: 0.004883 ms
+Schedule: guided  | Threads: 2  | Chunk: 32  | 90th percentile: 0.005859 ms
+Schedule: guided  | Threads: 4  | Chunk: 1   | 90th percentile: 0.005859 ms
+Schedule: guided  | Threads: 4  | Chunk: 2   | 90th percentile: 0.005859 ms
+Schedule: guided  | Threads: 4  | Chunk: 4   | 90th percentile: 0.005615 ms
+Schedule: guided  | Threads: 4  | Chunk: 8   | 90th percentile: 0.005371 ms
+Schedule: guided  | Threads: 4  | Chunk: 16  | 90th percentile: 0.004883 ms
+Schedule: guided  | Threads: 4  | Chunk: 32  | 90th percentile: 0.004639 ms
+Schedule: guided  | Threads: 8  | Chunk: 1   | 90th percentile: 0.007080 ms
+Schedule: guided  | Threads: 8  | Chunk: 2   | 90th percentile: 0.007812 ms
+Schedule: guided  | Threads: 8  | Chunk: 4   | 90th percentile: 0.006836 ms
+Schedule: guided  | Threads: 8  | Chunk: 8   | 90th percentile: 0.006348 ms
+Schedule: guided  | Threads: 8  | Chunk: 16  | 90th percentile: 0.004639 ms
+Schedule: guided  | Threads: 8  | Chunk: 32  | 90th percentile: 0.006348 ms
+Schedule: guided  | Threads: 16 | Chunk: 1   | 90th percentile: 0.599121 ms
+Schedule: guided  | Threads: 16 | Chunk: 2   | 90th percentile: 0.674072 ms
+Schedule: guided  | Threads: 16 | Chunk: 4   | 90th percentile: 0.591797 ms
+Schedule: guided  | Threads: 16 | Chunk: 8   | 90th percentile: 0.625732 ms
+Schedule: guided  | Threads: 16 | Chunk: 16  | 90th percentile: 0.729004 ms
+Schedule: guided  | Threads: 16 | Chunk: 32  | 90th percentile: 0.613525 ms
+Schedule: guided  | Threads: 32 | Chunk: 1   | 90th percentile: 1.249756 ms
+Schedule: guided  | Threads: 32 | Chunk: 2   | 90th percentile: 1.232666 ms
+Schedule: guided  | Threads: 32 | Chunk: 4   | 90th percentile: 1.274170 ms
+Schedule: guided  | Threads: 32 | Chunk: 8   | 90th percentile: 1.342773 ms
+Schedule: guided  | Threads: 32 | Chunk: 16  | 90th percentile: 1.220947 ms
+Schedule: guided  | Threads: 32 | Chunk: 32  | 90th percentile: 1.200195 ms
+
+========================================
+Matrix: ./adder_dcop_32.txt
+========================================
+Schedule: static  | Threads: 2  | Chunk: 1   | 90th percentile: 0.030273 ms
+Schedule: static  | Threads: 2  | Chunk: 2   | 90th percentile: 0.021484 ms
+Schedule: static  | Threads: 2  | Chunk: 4   | 90th percentile: 0.016357 ms
+Schedule: static  | Threads: 2  | Chunk: 8   | 90th percentile: 0.013916 ms
+Schedule: static  | Threads: 2  | Chunk: 16  | 90th percentile: 0.013184 ms
+Schedule: static  | Threads: 2  | Chunk: 32  | 90th percentile: 0.012207 ms
+Schedule: static  | Threads: 4  | Chunk: 1   | 90th percentile: 0.021729 ms
+Schedule: static  | Threads: 4  | Chunk: 2   | 90th percentile: 0.014648 ms
+Schedule: static  | Threads: 4  | Chunk: 4   | 90th percentile: 0.017090 ms
+Schedule: static  | Threads: 4  | Chunk: 8   | 90th percentile: 0.011230 ms
+Schedule: static  | Threads: 4  | Chunk: 16  | 90th percentile: 0.010742 ms
+Schedule: static  | Threads: 4  | Chunk: 32  | 90th percentile: 0.009033 ms
+Schedule: static  | Threads: 8  | Chunk: 1   | 90th percentile: 0.014404 ms
+Schedule: static  | Threads: 8  | Chunk: 2   | 90th percentile: 2.984131 ms
+Schedule: static  | Threads: 8  | Chunk: 4   | 90th percentile: 0.009766 ms
+Schedule: static  | Threads: 8  | Chunk: 8   | 90th percentile: 0.009033 ms
+Schedule: static  | Threads: 8  | Chunk: 16  | 90th percentile: 0.008301 ms
+Schedule: static  | Threads: 8  | Chunk: 32  | 90th percentile: 0.008789 ms
+Schedule: static  | Threads: 16 | Chunk: 1   | 90th percentile: 0.655273 ms
+Schedule: static  | Threads: 16 | Chunk: 2   | 90th percentile: 0.695557 ms
+Schedule: static  | Threads: 16 | Chunk: 4   | 90th percentile: 0.656250 ms
+Schedule: static  | Threads: 16 | Chunk: 8   | 90th percentile: 0.722412 ms
+Schedule: static  | Threads: 16 | Chunk: 16  | 90th percentile: 0.672119 ms
+Schedule: static  | Threads: 16 | Chunk: 32  | 90th percentile: 0.644043 ms
+Schedule: static  | Threads: 32 | Chunk: 1   | 90th percentile: 1.217529 ms
+Schedule: static  | Threads: 32 | Chunk: 2   | 90th percentile: 1.458496 ms
+Schedule: static  | Threads: 32 | Chunk: 4   | 90th percentile: 1.312744 ms
+Schedule: static  | Threads: 32 | Chunk: 8   | 90th percentile: 1.285400 ms
+Schedule: static  | Threads: 32 | Chunk: 16  | 90th percentile: 1.299561 ms
+Schedule: static  | Threads: 32 | Chunk: 32  | 90th percentile: 1.241455 ms
+Schedule: dynamic | Threads: 2  | Chunk: 1   | 90th percentile: 0.071777 ms
+Schedule: dynamic | Threads: 2  | Chunk: 2   | 90th percentile: 0.036377 ms
+Schedule: dynamic | Threads: 2  | Chunk: 4   | 90th percentile: 0.026611 ms
+Schedule: dynamic | Threads: 2  | Chunk: 8   | 90th percentile: 0.020996 ms
+Schedule: dynamic | Threads: 2  | Chunk: 16  | 90th percentile: 0.024902 ms
+Schedule: dynamic | Threads: 2  | Chunk: 32  | 90th percentile: 0.014648 ms
+Schedule: dynamic | Threads: 4  | Chunk: 1   | 90th percentile: 0.051025 ms
+Schedule: dynamic | Threads: 4  | Chunk: 2   | 90th percentile: 0.028320 ms
+Schedule: dynamic | Threads: 4  | Chunk: 4   | 90th percentile: 0.029541 ms
+Schedule: dynamic | Threads: 4  | Chunk: 8   | 90th percentile: 0.015625 ms
+Schedule: dynamic | Threads: 4  | Chunk: 16  | 90th percentile: 0.011719 ms
+Schedule: dynamic | Threads: 4  | Chunk: 32  | 90th percentile: 0.011475 ms
+Schedule: dynamic | Threads: 8  | Chunk: 1   | 90th percentile: 0.046875 ms
+Schedule: dynamic | Threads: 8  | Chunk: 2   | 90th percentile: 0.026367 ms
+Schedule: dynamic | Threads: 8  | Chunk: 4   | 90th percentile: 0.017090 ms
+Schedule: dynamic | Threads: 8  | Chunk: 8   | 90th percentile: 0.011475 ms
+Schedule: dynamic | Threads: 8  | Chunk: 16  | 90th percentile: 0.009033 ms
+Schedule: dynamic | Threads: 8  | Chunk: 32  | 90th percentile: 0.008789 ms
+Schedule: dynamic | Threads: 16 | Chunk: 1   | 90th percentile: 0.617188 ms
+Schedule: dynamic | Threads: 16 | Chunk: 2   | 90th percentile: 0.629150 ms
+Schedule: dynamic | Threads: 16 | Chunk: 4   | 90th percentile: 0.612549 ms
+Schedule: dynamic | Threads: 16 | Chunk: 8   | 90th percentile: 0.640137 ms
+Schedule: dynamic | Threads: 16 | Chunk: 16  | 90th percentile: 0.619385 ms
+Schedule: dynamic | Threads: 16 | Chunk: 32  | 90th percentile: 0.626709 ms
+Schedule: dynamic | Threads: 32 | Chunk: 1   | 90th percentile: 1.209961 ms
+Schedule: dynamic | Threads: 32 | Chunk: 2   | 90th percentile: 1.344482 ms
+Schedule: dynamic | Threads: 32 | Chunk: 4   | 90th percentile: 1.211426 ms
+Schedule: dynamic | Threads: 32 | Chunk: 8   | 90th percentile: 1.197510 ms
+Schedule: dynamic | Threads: 32 | Chunk: 16  | 90th percentile: 1.321533 ms
+Schedule: dynamic | Threads: 32 | Chunk: 32  | 90th percentile: 1.289551 ms
+Schedule: guided  | Threads: 2  | Chunk: 1   | 90th percentile: 0.012939 ms
+Schedule: guided  | Threads: 2  | Chunk: 2   | 90th percentile: 0.012939 ms
+Schedule: guided  | Threads: 2  | Chunk: 4   | 90th percentile: 0.012207 ms
+Schedule: guided  | Threads: 2  | Chunk: 8   | 90th percentile: 0.012939 ms
+Schedule: guided  | Threads: 2  | Chunk: 16  | 90th percentile: 0.014404 ms
+Schedule: guided  | Threads: 2  | Chunk: 32  | 90th percentile: 0.014160 ms
+Schedule: guided  | Threads: 4  | Chunk: 1   | 90th percentile: 0.010986 ms
+Schedule: guided  | Threads: 4  | Chunk: 2   | 90th percentile: 0.010498 ms
+Schedule: guided  | Threads: 4  | Chunk: 4   | 90th percentile: 0.010742 ms
+Schedule: guided  | Threads: 4  | Chunk: 8   | 90th percentile: 0.010010 ms
+Schedule: guided  | Threads: 4  | Chunk: 16  | 90th percentile: 0.010010 ms
+Schedule: guided  | Threads: 4  | Chunk: 32  | 90th percentile: 0.010010 ms
+Schedule: guided  | Threads: 8  | Chunk: 1   | 90th percentile: 0.010986 ms
+Schedule: guided  | Threads: 8  | Chunk: 2   | 90th percentile: 0.010742 ms
+Schedule: guided  | Threads: 8  | Chunk: 4   | 90th percentile: 0.010254 ms
+Schedule: guided  | Threads: 8  | Chunk: 8   | 90th percentile: 0.009521 ms
+Schedule: guided  | Threads: 8  | Chunk: 16  | 90th percentile: 0.008789 ms
+Schedule: guided  | Threads: 8  | Chunk: 32  | 90th percentile: 0.008301 ms
+Schedule: guided  | Threads: 16 | Chunk: 1   | 90th percentile: 0.644043 ms
+Schedule: guided  | Threads: 16 | Chunk: 2   | 90th percentile: 0.670898 ms
+Schedule: guided  | Threads: 16 | Chunk: 4   | 90th percentile: 0.663574 ms
+Schedule: guided  | Threads: 16 | Chunk: 8   | 90th percentile: 0.646484 ms
+Schedule: guided  | Threads: 16 | Chunk: 16  | 90th percentile: 0.625000 ms
+Schedule: guided  | Threads: 16 | Chunk: 32  | 90th percentile: 0.634521 ms
+Schedule: guided  | Threads: 32 | Chunk: 1   | 90th percentile: 1.216553 ms
+Schedule: guided  | Threads: 32 | Chunk: 2   | 90th percentile: 1.174805 ms
+Schedule: guided  | Threads: 32 | Chunk: 4   | 90th percentile: 1.228516 ms
+Schedule: guided  | Threads: 32 | Chunk: 8   | 90th percentile: 1.281006 ms
+Schedule: guided  | Threads: 32 | Chunk: 16  | 90th percentile: 1.358643 ms
+Schedule: guided  | Threads: 32 | Chunk: 32  | 90th percentile: 1.225830 ms
+
+========================================
+Matrix: ./bcsstk14.txt
+========================================
+Schedule: static  | Threads: 2  | Chunk: 1   | 90th percentile: 0.036377 ms
+Schedule: static  | Threads: 2  | Chunk: 2   | 90th percentile: 0.122070 ms
+Schedule: static  | Threads: 2  | Chunk: 4   | 90th percentile: 0.025391 ms
+Schedule: static  | Threads: 2  | Chunk: 8   | 90th percentile: 0.022461 ms
+Schedule: static  | Threads: 2  | Chunk: 16  | 90th percentile: 0.021484 ms
+Schedule: static  | Threads: 2  | Chunk: 32  | 90th percentile: 0.020508 ms
+Schedule: static  | Threads: 4  | Chunk: 1   | 90th percentile: 0.056152 ms
+Schedule: static  | Threads: 4  | Chunk: 2   | 90th percentile: 0.026611 ms
+Schedule: static  | Threads: 4  | Chunk: 4   | 90th percentile: 0.019287 ms
+Schedule: static  | Threads: 4  | Chunk: 8   | 90th percentile: 0.018555 ms
+Schedule: static  | Threads: 4  | Chunk: 16  | 90th percentile: 0.017822 ms
+Schedule: static  | Threads: 4  | Chunk: 32  | 90th percentile: 0.014648 ms
+Schedule: static  | Threads: 8  | Chunk: 1   | 90th percentile: 0.017578 ms
+Schedule: static  | Threads: 8  | Chunk: 2   | 90th percentile: 0.013184 ms
+Schedule: static  | Threads: 8  | Chunk: 4   | 90th percentile: 0.013672 ms
+Schedule: static  | Threads: 8  | Chunk: 8   | 90th percentile: 0.012451 ms
+Schedule: static  | Threads: 8  | Chunk: 16  | 90th percentile: 0.010254 ms
+Schedule: static  | Threads: 8  | Chunk: 32  | 90th percentile: 0.010254 ms
+Schedule: static  | Threads: 16 | Chunk: 1   | 90th percentile: 0.678223 ms
+Schedule: static  | Threads: 16 | Chunk: 2   | 90th percentile: 0.647217 ms
+Schedule: static  | Threads: 16 | Chunk: 4   | 90th percentile: 0.643311 ms
+Schedule: static  | Threads: 16 | Chunk: 8   | 90th percentile: 0.662109 ms
+Schedule: static  | Threads: 16 | Chunk: 16  | 90th percentile: 0.705811 ms
+Schedule: static  | Threads: 16 | Chunk: 32  | 90th percentile: 0.717041 ms
+Schedule: static  | Threads: 32 | Chunk: 1   | 90th percentile: 1.233154 ms
+Schedule: static  | Threads: 32 | Chunk: 2   | 90th percentile: 1.250732 ms
+Schedule: static  | Threads: 32 | Chunk: 4   | 90th percentile: 1.220459 ms
+Schedule: static  | Threads: 32 | Chunk: 8   | 90th percentile: 1.224121 ms
+Schedule: static  | Threads: 32 | Chunk: 16  | 90th percentile: 1.191650 ms
+Schedule: static  | Threads: 32 | Chunk: 32  | 90th percentile: 1.247314 ms
+Schedule: dynamic | Threads: 2  | Chunk: 1   | 90th percentile: 0.074951 ms
+Schedule: dynamic | Threads: 2  | Chunk: 2   | 90th percentile: 0.040771 ms
+Schedule: dynamic | Threads: 2  | Chunk: 4   | 90th percentile: 0.053955 ms
+Schedule: dynamic | Threads: 2  | Chunk: 8   | 90th percentile: 0.025391 ms
+Schedule: dynamic | Threads: 2  | Chunk: 16  | 90th percentile: 0.022705 ms
+Schedule: dynamic | Threads: 2  | Chunk: 32  | 90th percentile: 0.026367 ms
+Schedule: dynamic | Threads: 4  | Chunk: 1   | 90th percentile: 0.062988 ms
+Schedule: dynamic | Threads: 4  | Chunk: 2   | 90th percentile: 0.033691 ms
+Schedule: dynamic | Threads: 4  | Chunk: 4   | 90th percentile: 0.021484 ms
+Schedule: dynamic | Threads: 4  | Chunk: 8   | 90th percentile: 0.021484 ms
+Schedule: dynamic | Threads: 4  | Chunk: 16  | 90th percentile: 0.015381 ms
+Schedule: dynamic | Threads: 4  | Chunk: 32  | 90th percentile: 0.017090 ms
+Schedule: dynamic | Threads: 8  | Chunk: 1   | 90th percentile: 0.043213 ms
+Schedule: dynamic | Threads: 8  | Chunk: 2   | 90th percentile: 0.025879 ms
+Schedule: dynamic | Threads: 8  | Chunk: 4   | 90th percentile: 0.017090 ms
+Schedule: dynamic | Threads: 8  | Chunk: 8   | 90th percentile: 0.011475 ms
+Schedule: dynamic | Threads: 8  | Chunk: 16  | 90th percentile: 0.010010 ms
+Schedule: dynamic | Threads: 8  | Chunk: 32  | 90th percentile: 0.023438 ms
+Schedule: dynamic | Threads: 16 | Chunk: 1   | 90th percentile: 0.692139 ms
+Schedule: dynamic | Threads: 16 | Chunk: 2   | 90th percentile: 0.654541 ms
+Schedule: dynamic | Threads: 16 | Chunk: 4   | 90th percentile: 0.764160 ms
+Schedule: dynamic | Threads: 16 | Chunk: 8   | 90th percentile: 0.653076 ms
+Schedule: dynamic | Threads: 16 | Chunk: 16  | 90th percentile: 0.628906 ms
+Schedule: dynamic | Threads: 16 | Chunk: 32  | 90th percentile: 0.743164 ms
+Schedule: dynamic | Threads: 32 | Chunk: 1   | 90th percentile: 1.242432 ms
+Schedule: dynamic | Threads: 32 | Chunk: 2   | 90th percentile: 1.359619 ms
+Schedule: dynamic | Threads: 32 | Chunk: 4   | 90th percentile: 1.441406 ms
+Schedule: dynamic | Threads: 32 | Chunk: 8   | 90th percentile: 1.444092 ms
+Schedule: dynamic | Threads: 32 | Chunk: 16  | 90th percentile: 1.484131 ms
+Schedule: dynamic | Threads: 32 | Chunk: 32  | 90th percentile: 1.377197 ms
+Schedule: guided  | Threads: 2  | Chunk: 1   | 90th percentile: 0.022461 ms
+Schedule: guided  | Threads: 2  | Chunk: 2   | 90th percentile: 0.042236 ms
+Schedule: guided  | Threads: 2  | Chunk: 4   | 90th percentile: 0.024170 ms
+Schedule: guided  | Threads: 2  | Chunk: 8   | 90th percentile: 0.024170 ms
+Schedule: guided  | Threads: 2  | Chunk: 16  | 90th percentile: 0.025391 ms
+Schedule: guided  | Threads: 2  | Chunk: 32  | 90th percentile: 0.036377 ms
+Schedule: guided  | Threads: 4  | Chunk: 1   | 90th percentile: 0.020264 ms
+Schedule: guided  | Threads: 4  | Chunk: 2   | 90th percentile: 0.019287 ms
+Schedule: guided  | Threads: 4  | Chunk: 4   | 90th percentile: 0.017822 ms
+Schedule: guided  | Threads: 4  | Chunk: 8   | 90th percentile: 0.020020 ms
+Schedule: guided  | Threads: 4  | Chunk: 16  | 90th percentile: 0.021484 ms
+Schedule: guided  | Threads: 4  | Chunk: 32  | 90th percentile: 0.018066 ms
+Schedule: guided  | Threads: 8  | Chunk: 1   | 90th percentile: 0.016113 ms
+Schedule: guided  | Threads: 8  | Chunk: 2   | 90th percentile: 0.015625 ms
+Schedule: guided  | Threads: 8  | Chunk: 4   | 90th percentile: 0.015381 ms
+Schedule: guided  | Threads: 8  | Chunk: 8   | 90th percentile: 0.015869 ms
+Schedule: guided  | Threads: 8  | Chunk: 16  | 90th percentile: 0.171143 ms
+Schedule: guided  | Threads: 8  | Chunk: 32  | 90th percentile: 0.013428 ms
+Schedule: guided  | Threads: 16 | Chunk: 1   | 90th percentile: 0.936279 ms
+Schedule: guided  | Threads: 16 | Chunk: 2   | 90th percentile: 0.926758 ms
+Schedule: guided  | Threads: 16 | Chunk: 4   | 90th percentile: 0.859619 ms
+Schedule: guided  | Threads: 16 | Chunk: 8   | 90th percentile: 0.844727 ms
+Schedule: guided  | Threads: 16 | Chunk: 16  | 90th percentile: 0.912598 ms
+Schedule: guided  | Threads: 16 | Chunk: 32  | 90th percentile: 0.932861 ms
+Schedule: guided  | Threads: 32 | Chunk: 1   | 90th percentile: 1.641602 ms
+Schedule: guided  | Threads: 32 | Chunk: 2   | 90th percentile: 1.681641 ms
+Schedule: guided  | Threads: 32 | Chunk: 4   | 90th percentile: 1.765381 ms
+Schedule: guided  | Threads: 32 | Chunk: 8   | 90th percentile: 1.537109 ms
+Schedule: guided  | Threads: 32 | Chunk: 16  | 90th percentile: 1.575928 ms
+Schedule: guided  | Threads: 32 | Chunk: 32  | 90th percentile: 1.601562 ms
+
+========================================
+Matrix: ./rail_5177.txt
+========================================
+Schedule: static  | Threads: 2  | Chunk: 1   | 90th percentile: 0.074951 ms
+Schedule: static  | Threads: 2  | Chunk: 2   | 90th percentile: 0.049072 ms
+Schedule: static  | Threads: 2  | Chunk: 4   | 90th percentile: 0.032715 ms
+Schedule: static  | Threads: 2  | Chunk: 8   | 90th percentile: 0.027832 ms
+Schedule: static  | Threads: 2  | Chunk: 16  | 90th percentile: 0.037842 ms
+Schedule: static  | Threads: 2  | Chunk: 32  | 90th percentile: 0.020996 ms
+Schedule: static  | Threads: 4  | Chunk: 1   | 90th percentile: 0.041260 ms
+Schedule: static  | Threads: 4  | Chunk: 2   | 90th percentile: 0.037842 ms
+Schedule: static  | Threads: 4  | Chunk: 4   | 90th percentile: 0.026367 ms
+Schedule: static  | Threads: 4  | Chunk: 8   | 90th percentile: 0.021729 ms
+Schedule: static  | Threads: 4  | Chunk: 16  | 90th percentile: 0.018555 ms
+Schedule: static  | Threads: 4  | Chunk: 32  | 90th percentile: 0.014404 ms
+Schedule: static  | Threads: 8  | Chunk: 1   | 90th percentile: 0.032471 ms
+Schedule: static  | Threads: 8  | Chunk: 2   | 90th percentile: 0.021729 ms
+Schedule: static  | Threads: 8  | Chunk: 4   | 90th percentile: 0.015869 ms
+Schedule: static  | Threads: 8  | Chunk: 8   | 90th percentile: 0.015869 ms
+Schedule: static  | Threads: 8  | Chunk: 16  | 90th percentile: 0.011719 ms
+Schedule: static  | Threads: 8  | Chunk: 32  | 90th percentile: 0.010254 ms
+Schedule: static  | Threads: 16 | Chunk: 1   | 90th percentile: 0.822266 ms
+Schedule: static  | Threads: 16 | Chunk: 2   | 90th percentile: 0.861572 ms
+Schedule: static  | Threads: 16 | Chunk: 4   | 90th percentile: 0.854980 ms
+Schedule: static  | Threads: 16 | Chunk: 8   | 90th percentile: 0.817627 ms
+Schedule: static  | Threads: 16 | Chunk: 16  | 90th percentile: 0.790527 ms
+Schedule: static  | Threads: 16 | Chunk: 32  | 90th percentile: 0.887695 ms
+Schedule: static  | Threads: 32 | Chunk: 1   | 90th percentile: 1.640869 ms
+Schedule: static  | Threads: 32 | Chunk: 2   | 90th percentile: 1.661865 ms
+Schedule: static  | Threads: 32 | Chunk: 4   | 90th percentile: 1.659912 ms
+Schedule: static  | Threads: 32 | Chunk: 8   | 90th percentile: 1.798340 ms
+Schedule: static  | Threads: 32 | Chunk: 16  | 90th percentile: 1.657471 ms
+Schedule: static  | Threads: 32 | Chunk: 32  | 90th percentile: 1.701172 ms
+Schedule: dynamic | Threads: 2  | Chunk: 1   | 90th percentile: 0.255615 ms
+Schedule: dynamic | Threads: 2  | Chunk: 2   | 90th percentile: 0.113525 ms
+Schedule: dynamic | Threads: 2  | Chunk: 4   | 90th percentile: 0.063965 ms
+Schedule: dynamic | Threads: 2  | Chunk: 8   | 90th percentile: 0.041504 ms
+Schedule: dynamic | Threads: 2  | Chunk: 16  | 90th percentile: 0.029541 ms
+Schedule: dynamic | Threads: 2  | Chunk: 32  | 90th percentile: 0.025146 ms
+Schedule: dynamic | Threads: 4  | Chunk: 1   | 90th percentile: 0.147461 ms
+Schedule: dynamic | Threads: 4  | Chunk: 2   | 90th percentile: 0.079834 ms
+Schedule: dynamic | Threads: 4  | Chunk: 4   | 90th percentile: 0.046143 ms
+Schedule: dynamic | Threads: 4  | Chunk: 8   | 90th percentile: 0.028809 ms
+Schedule: dynamic | Threads: 4  | Chunk: 16  | 90th percentile: 0.020020 ms
+Schedule: dynamic | Threads: 4  | Chunk: 32  | 90th percentile: 0.017822 ms
+Schedule: dynamic | Threads: 8  | Chunk: 1   | 90th percentile: 0.152832 ms
+Schedule: dynamic | Threads: 8  | Chunk: 2   | 90th percentile: 0.061035 ms
+Schedule: dynamic | Threads: 8  | Chunk: 4   | 90th percentile: 0.041504 ms
+Schedule: dynamic | Threads: 8  | Chunk: 8   | 90th percentile: 0.025146 ms
+Schedule: dynamic | Threads: 8  | Chunk: 16  | 90th percentile: 0.014404 ms
+Schedule: dynamic | Threads: 8  | Chunk: 32  | 90th percentile: 0.014160 ms
+Schedule: dynamic | Threads: 16 | Chunk: 1   | 90th percentile: 0.672119 ms
+Schedule: dynamic | Threads: 16 | Chunk: 2   | 90th percentile: 0.816650 ms
+Schedule: dynamic | Threads: 16 | Chunk: 4   | 90th percentile: 0.850342 ms
+Schedule: dynamic | Threads: 16 | Chunk: 8   | 90th percentile: 0.903076 ms
+Schedule: dynamic | Threads: 16 | Chunk: 16  | 90th percentile: 0.925049 ms
+Schedule: dynamic | Threads: 16 | Chunk: 32  | 90th percentile: 0.840576 ms
+Schedule: dynamic | Threads: 32 | Chunk: 1   | 90th percentile: 1.239746 ms
+Schedule: dynamic | Threads: 32 | Chunk: 2   | 90th percentile: 1.567627 ms
+Schedule: dynamic | Threads: 32 | Chunk: 4   | 90th percentile: 1.659180 ms
+Schedule: dynamic | Threads: 32 | Chunk: 8   | 90th percentile: 1.614258 ms
+Schedule: dynamic | Threads: 32 | Chunk: 16  | 90th percentile: 1.738770 ms
+Schedule: dynamic | Threads: 32 | Chunk: 32  | 90th percentile: 1.682617 ms
+Schedule: guided  | Threads: 2  | Chunk: 1   | 90th percentile: 0.025879 ms
+Schedule: guided  | Threads: 2  | Chunk: 2   | 90th percentile: 0.021484 ms
+Schedule: guided  | Threads: 2  | Chunk: 4   | 90th percentile: 0.021973 ms
+Schedule: guided  | Threads: 2  | Chunk: 8   | 90th percentile: 0.018799 ms
+Schedule: guided  | Threads: 2  | Chunk: 16  | 90th percentile: 0.031494 ms
+Schedule: guided  | Threads: 2  | Chunk: 32  | 90th percentile: 0.018555 ms
+Schedule: guided  | Threads: 4  | Chunk: 1   | 90th percentile: 0.013428 ms
+Schedule: guided  | Threads: 4  | Chunk: 2   | 90th percentile: 0.013672 ms
+Schedule: guided  | Threads: 4  | Chunk: 4   | 90th percentile: 0.015137 ms
+Schedule: guided  | Threads: 4  | Chunk: 8   | 90th percentile: 0.014893 ms
+Schedule: guided  | Threads: 4  | Chunk: 16  | 90th percentile: 0.018555 ms
+Schedule: guided  | Threads: 4  | Chunk: 32  | 90th percentile: 0.015625 ms
+Schedule: guided  | Threads: 8  | Chunk: 1   | 90th percentile: 0.014648 ms
+Schedule: guided  | Threads: 8  | Chunk: 2   | 90th percentile: 0.013184 ms
+Schedule: guided  | Threads: 8  | Chunk: 4   | 90th percentile: 0.096680 ms
+Schedule: guided  | Threads: 8  | Chunk: 8   | 90th percentile: 0.015625 ms
+Schedule: guided  | Threads: 8  | Chunk: 16  | 90th percentile: 0.013184 ms
+Schedule: guided  | Threads: 8  | Chunk: 32  | 90th percentile: 0.010742 ms
+Schedule: guided  | Threads: 16 | Chunk: 1   | 90th percentile: 0.797363 ms
+Schedule: guided  | Threads: 16 | Chunk: 2   | 90th percentile: 0.868408 ms
+Schedule: guided  | Threads: 16 | Chunk: 4   | 90th percentile: 0.805176 ms
+Schedule: guided  | Threads: 16 | Chunk: 8   | 90th percentile: 0.868652 ms
+Schedule: guided  | Threads: 16 | Chunk: 16  | 90th percentile: 0.930908 ms
+Schedule: guided  | Threads: 16 | Chunk: 32  | 90th percentile: 0.936768 ms
+Schedule: guided  | Threads: 32 | Chunk: 1   | 90th percentile: 1.675537 ms
+Schedule: guided  | Threads: 32 | Chunk: 2   | 90th percentile: 1.696289 ms
+Schedule: guided  | Threads: 32 | Chunk: 4   | 90th percentile: 1.546143 ms
+Schedule: guided  | Threads: 32 | Chunk: 8   | 90th percentile: 1.555664 ms
+Schedule: guided  | Threads: 32 | Chunk: 16  | 90th percentile: 1.572754 ms
+Schedule: guided  | Threads: 32 | Chunk: 32  | 90th percentile: 1.614746 ms
+
+========================================
+Matrix: ./chimera_matrix.txt
+========================================
+Schedule: static  | Threads: 2  | Chunk: 1   | 90th percentile: 1.875244 ms
+Schedule: static  | Threads: 2  | Chunk: 2   | 90th percentile: 1.421631 ms
+Schedule: static  | Threads: 2  | Chunk: 4   | 90th percentile: 1.096191 ms
+Schedule: static  | Threads: 2  | Chunk: 8   | 90th percentile: 0.956787 ms
+Schedule: static  | Threads: 2  | Chunk: 16  | 90th percentile: 0.847900 ms
+Schedule: static  | Threads: 2  | Chunk: 32  | 90th percentile: 0.908203 ms
+Schedule: static  | Threads: 4  | Chunk: 1   | 90th percentile: 1.734375 ms
+Schedule: static  | Threads: 4  | Chunk: 2   | 90th percentile: 1.185547 ms
+Schedule: static  | Threads: 4  | Chunk: 4   | 90th percentile: 1.015625 ms
+Schedule: static  | Threads: 4  | Chunk: 8   | 90th percentile: 0.871094 ms
+Schedule: static  | Threads: 4  | Chunk: 16  | 90th percentile: 0.775879 ms
+Schedule: static  | Threads: 4  | Chunk: 32  | 90th percentile: 0.710693 ms
+Schedule: static  | Threads: 8  | Chunk: 1   | 90th percentile: 4.164795 ms
+Schedule: static  | Threads: 8  | Chunk: 2   | 90th percentile: 2.835205 ms
+Schedule: static  | Threads: 8  | Chunk: 4   | 90th percentile: 0.860107 ms
+Schedule: static  | Threads: 8  | Chunk: 8   | 90th percentile: 0.689453 ms
+Schedule: static  | Threads: 8  | Chunk: 16  | 90th percentile: 1.741455 ms
+Schedule: static  | Threads: 8  | Chunk: 32  | 90th percentile: 0.449951 ms
+Schedule: static  | Threads: 16 | Chunk: 1   | 90th percentile: 1.451416 ms
+Schedule: static  | Threads: 16 | Chunk: 2   | 90th percentile: 1.260254 ms
+Schedule: static  | Threads: 16 | Chunk: 4   | 90th percentile: 1.097900 ms
+Schedule: static  | Threads: 16 | Chunk: 8   | 90th percentile: 1.009521 ms
+Schedule: static  | Threads: 16 | Chunk: 16  | 90th percentile: 0.899414 ms
+Schedule: static  | Threads: 16 | Chunk: 32  | 90th percentile: 0.823975 ms
+Schedule: static  | Threads: 32 | Chunk: 1   | 90th percentile: 1.895020 ms
+Schedule: static  | Threads: 32 | Chunk: 2   | 90th percentile: 1.707275 ms
+Schedule: static  | Threads: 32 | Chunk: 4   | 90th percentile: 1.163330 ms
+Schedule: static  | Threads: 32 | Chunk: 8   | 90th percentile: 1.164795 ms
+Schedule: static  | Threads: 32 | Chunk: 16  | 90th percentile: 0.992188 ms
+Schedule: static  | Threads: 32 | Chunk: 32  | 90th percentile: 1.206299 ms
+Schedule: dynamic | Threads: 2  | Chunk: 1   | 90th percentile: 4.649658 ms
+Schedule: dynamic | Threads: 2  | Chunk: 2   | 90th percentile: 2.276611 ms
+Schedule: dynamic | Threads: 2  | Chunk: 4   | 90th percentile: 1.839600 ms
+Schedule: dynamic | Threads: 2  | Chunk: 8   | 90th percentile: 1.200195 ms
+Schedule: dynamic | Threads: 2  | Chunk: 16  | 90th percentile: 0.904785 ms
+Schedule: dynamic | Threads: 2  | Chunk: 32  | 90th percentile: 0.904541 ms
+Schedule: dynamic | Threads: 4  | Chunk: 1   | 90th percentile: 3.702637 ms
+Schedule: dynamic | Threads: 4  | Chunk: 2   | 90th percentile: 1.931641 ms
+Schedule: dynamic | Threads: 4  | Chunk: 4   | 90th percentile: 1.128174 ms
+Schedule: dynamic | Threads: 4  | Chunk: 8   | 90th percentile: 0.843750 ms
+Schedule: dynamic | Threads: 4  | Chunk: 16  | 90th percentile: 0.552734 ms
+Schedule: dynamic | Threads: 4  | Chunk: 32  | 90th percentile: 0.489014 ms
+Schedule: dynamic | Threads: 8  | Chunk: 1   | 90th percentile: 4.364014 ms
+Schedule: dynamic | Threads: 8  | Chunk: 2   | 90th percentile: 1.670654 ms
+Schedule: dynamic | Threads: 8  | Chunk: 4   | 90th percentile: 3.031738 ms
+Schedule: dynamic | Threads: 8  | Chunk: 8   | 90th percentile: 0.663330 ms
+Schedule: dynamic | Threads: 8  | Chunk: 16  | 90th percentile: 0.508301 ms
+Schedule: dynamic | Threads: 8  | Chunk: 32  | 90th percentile: 0.504883 ms
+Schedule: dynamic | Threads: 16 | Chunk: 1   | 90th percentile: 3.118164 ms
+Schedule: dynamic | Threads: 16 | Chunk: 2   | 90th percentile: 1.739990 ms
+Schedule: dynamic | Threads: 16 | Chunk: 4   | 90th percentile: 1.218018 ms
+Schedule: dynamic | Threads: 16 | Chunk: 8   | 90th percentile: 0.816406 ms
+Schedule: dynamic | Threads: 16 | Chunk: 16  | 90th percentile: 0.729004 ms
+Schedule: dynamic | Threads: 16 | Chunk: 32  | 90th percentile: 0.555664 ms
+Schedule: dynamic | Threads: 32 | Chunk: 1   | 90th percentile: 4.325195 ms
+Schedule: dynamic | Threads: 32 | Chunk: 2   | 90th percentile: 1.719727 ms
+Schedule: dynamic | Threads: 32 | Chunk: 4   | 90th percentile: 1.158203 ms
+Schedule: dynamic | Threads: 32 | Chunk: 8   | 90th percentile: 0.758057 ms
+Schedule: dynamic | Threads: 32 | Chunk: 16  | 90th percentile: 0.625977 ms
+Schedule: dynamic | Threads: 32 | Chunk: 32  | 90th percentile: 0.776611 ms
+Schedule: guided  | Threads: 2  | Chunk: 1   | 90th percentile: 0.694336 ms
+Schedule: guided  | Threads: 2  | Chunk: 2   | 90th percentile: 0.664795 ms
+Schedule: guided  | Threads: 2  | Chunk: 4   | 90th percentile: 0.658936 ms
+Schedule: guided  | Threads: 2  | Chunk: 8   | 90th percentile: 0.697266 ms
+Schedule: guided  | Threads: 2  | Chunk: 16  | 90th percentile: 0.713623 ms
+Schedule: guided  | Threads: 2  | Chunk: 32  | 90th percentile: 0.616943 ms
+Schedule: guided  | Threads: 4  | Chunk: 1   | 90th percentile: 0.430176 ms
+Schedule: guided  | Threads: 4  | Chunk: 2   | 90th percentile: 0.401611 ms
+Schedule: guided  | Threads: 4  | Chunk: 4   | 90th percentile: 0.440430 ms
+Schedule: guided  | Threads: 4  | Chunk: 8   | 90th percentile: 0.463135 ms
+Schedule: guided  | Threads: 4  | Chunk: 16  | 90th percentile: 0.450928 ms
+Schedule: guided  | Threads: 4  | Chunk: 32  | 90th percentile: 0.454590 ms
+Schedule: guided  | Threads: 8  | Chunk: 1   | 90th percentile: 0.465332 ms
+Schedule: guided  | Threads: 8  | Chunk: 2   | 90th percentile: 0.347412 ms
+Schedule: guided  | Threads: 8  | Chunk: 4   | 90th percentile: 0.373291 ms
+Schedule: guided  | Threads: 8  | Chunk: 8   | 90th percentile: 0.419434 ms
+Schedule: guided  | Threads: 8  | Chunk: 16  | 90th percentile: 0.402344 ms
+Schedule: guided  | Threads: 8  | Chunk: 32  | 90th percentile: 0.412354 ms
+Schedule: guided  | Threads: 16 | Chunk: 1   | 90th percentile: 0.587646 ms
+Schedule: guided  | Threads: 16 | Chunk: 2   | 90th percentile: 0.601074 ms
+Schedule: guided  | Threads: 16 | Chunk: 4   | 90th percentile: 0.490479 ms
+Schedule: guided  | Threads: 16 | Chunk: 8   | 90th percentile: 0.550781 ms
+Schedule: guided  | Threads: 16 | Chunk: 16  | 90th percentile: 0.584473 ms
+Schedule: guided  | Threads: 16 | Chunk: 32  | 90th percentile: 0.564453 ms
+Schedule: guided  | Threads: 32 | Chunk: 1   | 90th percentile: 0.726074 ms
+Schedule: guided  | Threads: 32 | Chunk: 2   | 90th percentile: 0.587402 ms
+Schedule: guided  | Threads: 32 | Chunk: 4   | 90th percentile: 0.622314 ms
+Schedule: guided  | Threads: 32 | Chunk: 8   | 90th percentile: 0.547852 ms
+Schedule: guided  | Threads: 32 | Chunk: 16  | 90th percentile: 0.549072 ms
+Schedule: guided  | Threads: 32 | Chunk: 32  | 90th percentile: 0.616699 ms
+
+
+#################################################################
+Running experiments for: ./MVM_parallel_sellc  (parallel mode)
+#################################################################
+
+========================================
+Matrix: ./1138_bus.txt
+========================================
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 64  | 90th percentile: 0.090088 ms
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 128 | 90th percentile: 0.091064 ms
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 256 | 90th percentile: 0.088135 ms
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 512 | 90th percentile: 0.090088 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 64  | 90th percentile: 0.066895 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 128 | 90th percentile: 0.064453 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 256 | 90th percentile: 0.068848 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 512 | 90th percentile: 0.062744 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 64  | 90th percentile: 0.054443 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 128 | 90th percentile: 0.055664 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 256 | 90th percentile: 0.051758 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 512 | 90th percentile: 0.055176 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 64  | 90th percentile: 0.051270 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 128 | 90th percentile: 0.054443 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 256 | 90th percentile: 0.024902 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 512 | 90th percentile: 0.054443 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 64  | 90th percentile: 0.048828 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 128 | 90th percentile: 0.046875 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 256 | 90th percentile: 0.047119 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 512 | 90th percentile: 0.048584 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 64  | 90th percentile: 0.050049 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 128 | 90th percentile: 0.049805 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 256 | 90th percentile: 0.050293 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 512 | 90th percentile: 0.048584 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 64  | 90th percentile: 0.071045 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 128 | 90th percentile: 0.084961 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 256 | 90th percentile: 0.072266 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 512 | 90th percentile: 0.082764 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 64  | 90th percentile: 0.044434 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 128 | 90th percentile: 0.043213 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 256 | 90th percentile: 0.051025 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 512 | 90th percentile: 0.049072 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 64  | 90th percentile: 0.046143 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 128 | 90th percentile: 0.037354 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 256 | 90th percentile: 0.037598 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 512 | 90th percentile: 0.038330 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 64  | 90th percentile: 0.038086 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 128 | 90th percentile: 0.040771 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 256 | 90th percentile: 0.038818 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 512 | 90th percentile: 0.040771 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 64  | 90th percentile: 0.044434 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 128 | 90th percentile: 0.044189 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 256 | 90th percentile: 0.042969 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 512 | 90th percentile: 0.044434 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 64  | 90th percentile: 0.038818 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 128 | 90th percentile: 0.036377 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 256 | 90th percentile: 0.038574 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 512 | 90th percentile: 0.039062 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 64  | 90th percentile: 0.063965 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 128 | 90th percentile: 0.067383 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 256 | 90th percentile: 0.067383 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 512 | 90th percentile: 0.085449 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 64  | 90th percentile: 0.051270 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 128 | 90th percentile: 0.050049 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 256 | 90th percentile: 0.066162 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 512 | 90th percentile: 0.052979 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 64  | 90th percentile: 0.056396 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 128 | 90th percentile: 0.036133 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 256 | 90th percentile: 0.034180 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 512 | 90th percentile: 0.033203 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 64  | 90th percentile: 0.036133 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 128 | 90th percentile: 0.035889 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 256 | 90th percentile: 0.034180 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 512 | 90th percentile: 0.040283 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 64  | 90th percentile: 0.038574 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 128 | 90th percentile: 0.038818 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 256 | 90th percentile: 0.038330 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 512 | 90th percentile: 0.036621 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 64  | 90th percentile: 0.037598 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 128 | 90th percentile: 0.030762 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 256 | 90th percentile: 0.030273 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 512 | 90th percentile: 0.037598 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 64  | 90th percentile: 1.424316 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 128 | 90th percentile: 1.489502 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 256 | 90th percentile: 1.396484 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 512 | 90th percentile: 1.600830 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 64  | 90th percentile: 1.381104 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 128 | 90th percentile: 1.433105 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 256 | 90th percentile: 1.337891 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 512 | 90th percentile: 1.428467 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 64  | 90th percentile: 1.434570 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 128 | 90th percentile: 1.372070 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 256 | 90th percentile: 1.451416 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 512 | 90th percentile: 1.352539 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 64  | 90th percentile: 1.405762 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 128 | 90th percentile: 1.352539 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 256 | 90th percentile: 1.396484 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 512 | 90th percentile: 1.422607 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 64  | 90th percentile: 1.369873 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 128 | 90th percentile: 1.400879 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 256 | 90th percentile: 1.446289 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 512 | 90th percentile: 1.380127 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 64  | 90th percentile: 1.396240 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 128 | 90th percentile: 1.422363 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 256 | 90th percentile: 1.360107 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 512 | 90th percentile: 1.408936 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 64  | 90th percentile: 2.724609 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 128 | 90th percentile: 2.656006 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 256 | 90th percentile: 2.684082 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 512 | 90th percentile: 2.710938 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 64  | 90th percentile: 2.747070 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 128 | 90th percentile: 2.631348 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 256 | 90th percentile: 2.665039 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 512 | 90th percentile: 2.830322 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 64  | 90th percentile: 2.828613 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 128 | 90th percentile: 2.816895 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 256 | 90th percentile: 2.951416 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 512 | 90th percentile: 2.880127 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 64  | 90th percentile: 2.931885 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 128 | 90th percentile: 3.175781 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 256 | 90th percentile: 2.888428 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 512 | 90th percentile: 3.000000 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 64  | 90th percentile: 3.008057 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 128 | 90th percentile: 3.115967 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 256 | 90th percentile: 3.038330 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 512 | 90th percentile: 2.841064 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 64  | 90th percentile: 3.021973 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 128 | 90th percentile: 2.805908 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 256 | 90th percentile: 2.889648 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 512 | 90th percentile: 3.082031 ms
+
+========================================
+Matrix: ./adder_dcop_32.txt
+========================================
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 64  | 90th percentile: 0.165039 ms
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 128 | 90th percentile: 0.191406 ms
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 256 | 90th percentile: 0.163330 ms
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 512 | 90th percentile: 0.160645 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 64  | 90th percentile: 0.115723 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 128 | 90th percentile: 0.115479 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 256 | 90th percentile: 0.122070 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 512 | 90th percentile: 0.115234 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 64  | 90th percentile: 0.093750 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 128 | 90th percentile: 0.094727 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 256 | 90th percentile: 0.093994 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 512 | 90th percentile: 0.094971 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 64  | 90th percentile: 0.106201 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 128 | 90th percentile: 0.096436 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 256 | 90th percentile: 0.093994 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 512 | 90th percentile: 0.092773 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 64  | 90th percentile: 0.109619 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 128 | 90th percentile: 0.107422 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 256 | 90th percentile: 0.107666 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 512 | 90th percentile: 0.116211 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 64  | 90th percentile: 0.136963 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 128 | 90th percentile: 0.168213 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 256 | 90th percentile: 0.131348 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 512 | 90th percentile: 0.160400 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 64  | 90th percentile: 0.134277 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 128 | 90th percentile: 0.135498 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 256 | 90th percentile: 0.132080 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 512 | 90th percentile: 0.132324 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 64  | 90th percentile: 0.086426 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 128 | 90th percentile: 0.102783 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 256 | 90th percentile: 0.103271 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 512 | 90th percentile: 0.093018 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 64  | 90th percentile: 0.085938 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 128 | 90th percentile: 0.100098 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 256 | 90th percentile: 0.099365 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 512 | 90th percentile: 0.083740 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 64  | 90th percentile: 0.068359 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 128 | 90th percentile: 0.073975 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 256 | 90th percentile: 0.070068 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 512 | 90th percentile: 0.068848 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 64  | 90th percentile: 0.082520 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 128 | 90th percentile: 0.073975 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 256 | 90th percentile: 0.079346 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 512 | 90th percentile: 0.086182 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 64  | 90th percentile: 0.132568 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 128 | 90th percentile: 0.160645 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 256 | 90th percentile: 0.126465 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 512 | 90th percentile: 0.134521 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 64  | 90th percentile: 0.109619 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 128 | 90th percentile: 0.122803 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 256 | 90th percentile: 0.116699 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 512 | 90th percentile: 0.110840 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 64  | 90th percentile: 0.095459 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 128 | 90th percentile: 0.081055 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 256 | 90th percentile: 0.083252 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 512 | 90th percentile: 0.078613 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 64  | 90th percentile: 0.091309 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 128 | 90th percentile: 0.078125 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 256 | 90th percentile: 0.077637 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 512 | 90th percentile: 0.077148 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 64  | 90th percentile: 0.068604 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 128 | 90th percentile: 0.071533 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 256 | 90th percentile: 0.068359 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 512 | 90th percentile: 0.081787 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 64  | 90th percentile: 0.081299 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 128 | 90th percentile: 0.083740 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 256 | 90th percentile: 0.074707 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 512 | 90th percentile: 0.083740 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 64  | 90th percentile: 0.166748 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 128 | 90th percentile: 0.152832 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 256 | 90th percentile: 0.133057 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 512 | 90th percentile: 0.134033 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 64  | 90th percentile: 1.575195 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 128 | 90th percentile: 1.604492 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 256 | 90th percentile: 1.635986 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 512 | 90th percentile: 1.779541 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 64  | 90th percentile: 1.495850 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 128 | 90th percentile: 1.704590 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 256 | 90th percentile: 1.513184 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 512 | 90th percentile: 1.677734 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 64  | 90th percentile: 1.645752 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 128 | 90th percentile: 1.714355 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 256 | 90th percentile: 1.886230 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 512 | 90th percentile: 1.690186 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 64  | 90th percentile: 1.818604 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 128 | 90th percentile: 1.810303 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 256 | 90th percentile: 1.838135 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 512 | 90th percentile: 1.738770 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 64  | 90th percentile: 1.597168 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 128 | 90th percentile: 1.646729 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 256 | 90th percentile: 1.547119 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 512 | 90th percentile: 1.497559 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 64  | 90th percentile: 1.584473 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 128 | 90th percentile: 1.419189 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 256 | 90th percentile: 1.475586 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 512 | 90th percentile: 1.479492 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 64  | 90th percentile: 2.904297 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 128 | 90th percentile: 2.973877 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 256 | 90th percentile: 3.178223 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 512 | 90th percentile: 3.151855 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 64  | 90th percentile: 3.010254 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 128 | 90th percentile: 2.999512 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 256 | 90th percentile: 2.861572 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 512 | 90th percentile: 2.872314 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 64  | 90th percentile: 2.871582 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 128 | 90th percentile: 2.896973 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 256 | 90th percentile: 2.832764 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 512 | 90th percentile: 2.841553 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 64  | 90th percentile: 2.800049 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 128 | 90th percentile: 2.816895 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 256 | 90th percentile: 2.807617 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 512 | 90th percentile: 2.831055 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 64  | 90th percentile: 2.776367 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 128 | 90th percentile: 2.796631 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 256 | 90th percentile: 2.872314 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 512 | 90th percentile: 3.193359 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 64  | 90th percentile: 3.079834 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 128 | 90th percentile: 3.107910 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 256 | 90th percentile: 3.076172 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 512 | 90th percentile: 2.916748 ms
+
+========================================
+Matrix: ./bcsstk14.txt
+========================================
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 64  | 90th percentile: 0.213867 ms
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 128 | 90th percentile: 0.216064 ms
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 256 | 90th percentile: 0.209717 ms
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 512 | 90th percentile: 0.204102 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 64  | 90th percentile: 0.153076 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 128 | 90th percentile: 0.150391 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 256 | 90th percentile: 0.146484 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 512 | 90th percentile: 0.144043 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 64  | 90th percentile: 0.125244 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 128 | 90th percentile: 0.120117 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 256 | 90th percentile: 0.164551 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 512 | 90th percentile: 0.125977 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 64  | 90th percentile: 0.155273 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 128 | 90th percentile: 0.166748 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 256 | 90th percentile: 0.165283 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 512 | 90th percentile: 0.163086 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 64  | 90th percentile: 0.157715 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 128 | 90th percentile: 0.087158 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 256 | 90th percentile: 0.159668 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 512 | 90th percentile: 0.162109 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 64  | 90th percentile: 0.150146 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 128 | 90th percentile: 0.135254 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 256 | 90th percentile: 0.134277 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 512 | 90th percentile: 0.136475 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 64  | 90th percentile: 0.173096 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 128 | 90th percentile: 0.187012 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 256 | 90th percentile: 0.171631 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 512 | 90th percentile: 0.172363 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 64  | 90th percentile: 0.129150 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 128 | 90th percentile: 0.208252 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 256 | 90th percentile: 0.135498 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 512 | 90th percentile: 0.134277 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 64  | 90th percentile: 0.121094 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 128 | 90th percentile: 0.108887 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 256 | 90th percentile: 0.120117 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 512 | 90th percentile: 0.123779 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 64  | 90th percentile: 0.146240 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 128 | 90th percentile: 0.151611 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 256 | 90th percentile: 0.145020 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 512 | 90th percentile: 0.146240 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 64  | 90th percentile: 0.132324 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 128 | 90th percentile: 0.127686 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 256 | 90th percentile: 0.132324 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 512 | 90th percentile: 0.132324 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 64  | 90th percentile: 0.115479 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 128 | 90th percentile: 0.114502 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 256 | 90th percentile: 0.114258 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 512 | 90th percentile: 0.150635 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 64  | 90th percentile: 0.124756 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 128 | 90th percentile: 0.133545 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 256 | 90th percentile: 0.131836 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 512 | 90th percentile: 0.136719 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 64  | 90th percentile: 0.130127 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 128 | 90th percentile: 0.157227 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 256 | 90th percentile: 0.121826 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 512 | 90th percentile: 0.117920 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 64  | 90th percentile: 0.114746 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 128 | 90th percentile: 0.098633 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 256 | 90th percentile: 0.101562 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 512 | 90th percentile: 0.098877 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 64  | 90th percentile: 0.112549 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 128 | 90th percentile: 0.119141 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 256 | 90th percentile: 0.110107 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 512 | 90th percentile: 0.118164 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 64  | 90th percentile: 0.106445 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 128 | 90th percentile: 0.109131 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 256 | 90th percentile: 0.121094 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 512 | 90th percentile: 0.145508 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 64  | 90th percentile: 0.100098 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 128 | 90th percentile: 0.115479 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 256 | 90th percentile: 0.106445 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 512 | 90th percentile: 0.115967 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 64  | 90th percentile: 1.405518 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 128 | 90th percentile: 1.572754 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 256 | 90th percentile: 1.494629 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 512 | 90th percentile: 1.515869 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 64  | 90th percentile: 1.437500 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 128 | 90th percentile: 1.455078 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 256 | 90th percentile: 1.496826 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 512 | 90th percentile: 1.479004 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 64  | 90th percentile: 1.628174 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 128 | 90th percentile: 1.588135 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 256 | 90th percentile: 1.575195 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 512 | 90th percentile: 1.719971 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 64  | 90th percentile: 1.587646 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 128 | 90th percentile: 1.578857 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 256 | 90th percentile: 1.555176 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 512 | 90th percentile: 1.532227 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 64  | 90th percentile: 1.513428 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 128 | 90th percentile: 1.625244 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 256 | 90th percentile: 1.640381 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 512 | 90th percentile: 1.571533 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 64  | 90th percentile: 1.560547 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 128 | 90th percentile: 1.599854 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 256 | 90th percentile: 1.680420 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 512 | 90th percentile: 1.619385 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 64  | 90th percentile: 2.917969 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 128 | 90th percentile: 2.886475 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 256 | 90th percentile: 2.967773 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 512 | 90th percentile: 3.039307 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 64  | 90th percentile: 3.238525 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 128 | 90th percentile: 3.180908 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 256 | 90th percentile: 3.174316 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 512 | 90th percentile: 3.287842 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 64  | 90th percentile: 3.355469 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 128 | 90th percentile: 3.325439 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 256 | 90th percentile: 3.014893 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 512 | 90th percentile: 3.319336 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 64  | 90th percentile: 3.399902 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 128 | 90th percentile: 3.536133 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 256 | 90th percentile: 3.444092 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 512 | 90th percentile: 3.362549 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 64  | 90th percentile: 3.221191 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 128 | 90th percentile: 3.148193 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 256 | 90th percentile: 3.229492 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 512 | 90th percentile: 3.219727 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 64  | 90th percentile: 3.085693 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 128 | 90th percentile: 3.988037 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 256 | 90th percentile: 4.077637 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 512 | 90th percentile: 4.553711 ms
+
+========================================
+Matrix: ./rail_5177.txt
+========================================
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 64  | 90th percentile: 0.694580 ms
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 128 | 90th percentile: 0.262207 ms
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 256 | 90th percentile: 0.685547 ms
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 512 | 90th percentile: 0.702881 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 64  | 90th percentile: 0.496338 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 128 | 90th percentile: 0.479248 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 256 | 90th percentile: 0.474365 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 512 | 90th percentile: 0.434570 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 64  | 90th percentile: 0.372070 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 128 | 90th percentile: 0.374023 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 256 | 90th percentile: 0.359131 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 512 | 90th percentile: 0.339600 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 64  | 90th percentile: 0.281738 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 128 | 90th percentile: 0.272461 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 256 | 90th percentile: 0.281982 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 512 | 90th percentile: 0.265869 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 64  | 90th percentile: 0.247803 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 128 | 90th percentile: 0.288330 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 256 | 90th percentile: 0.252686 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 512 | 90th percentile: 0.266113 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 64  | 90th percentile: 0.110840 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 128 | 90th percentile: 0.239258 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 256 | 90th percentile: 0.260254 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 512 | 90th percentile: 0.257568 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 64  | 90th percentile: 0.409180 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 128 | 90th percentile: 0.418701 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 256 | 90th percentile: 0.408691 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 512 | 90th percentile: 0.406250 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 64  | 90th percentile: 0.299561 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 128 | 90th percentile: 0.303711 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 256 | 90th percentile: 0.296875 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 512 | 90th percentile: 0.306641 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 64  | 90th percentile: 0.301758 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 128 | 90th percentile: 0.322754 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 256 | 90th percentile: 0.297852 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 512 | 90th percentile: 0.285156 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 64  | 90th percentile: 0.186523 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 128 | 90th percentile: 0.175293 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 256 | 90th percentile: 0.172363 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 512 | 90th percentile: 0.198486 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 64  | 90th percentile: 0.255859 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 128 | 90th percentile: 0.239746 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 256 | 90th percentile: 0.214844 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 512 | 90th percentile: 0.239990 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 64  | 90th percentile: 0.175049 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 128 | 90th percentile: 0.184082 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 256 | 90th percentile: 0.183105 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 512 | 90th percentile: 0.184570 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 64  | 90th percentile: 0.321533 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 128 | 90th percentile: 0.347656 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 256 | 90th percentile: 0.373291 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 512 | 90th percentile: 0.646240 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 64  | 90th percentile: 0.261230 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 128 | 90th percentile: 0.281006 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 256 | 90th percentile: 0.293213 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 512 | 90th percentile: 0.285889 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 64  | 90th percentile: 0.230469 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 128 | 90th percentile: 0.261230 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 256 | 90th percentile: 0.236816 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 512 | 90th percentile: 0.240967 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 64  | 90th percentile: 0.192871 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 128 | 90th percentile: 0.190430 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 256 | 90th percentile: 0.149170 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 512 | 90th percentile: 0.164307 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 64  | 90th percentile: 0.181396 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 128 | 90th percentile: 0.182617 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 256 | 90th percentile: 0.207520 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 512 | 90th percentile: 0.206299 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 64  | 90th percentile: 0.139893 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 128 | 90th percentile: 0.148438 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 256 | 90th percentile: 0.179688 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 512 | 90th percentile: 0.138916 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 64  | 90th percentile: 1.448975 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 128 | 90th percentile: 1.583008 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 256 | 90th percentile: 1.358154 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 512 | 90th percentile: 1.485596 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 64  | 90th percentile: 1.410400 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 128 | 90th percentile: 1.494385 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 256 | 90th percentile: 1.275635 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 512 | 90th percentile: 1.493652 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 64  | 90th percentile: 1.521240 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 128 | 90th percentile: 1.397461 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 256 | 90th percentile: 1.361572 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 512 | 90th percentile: 1.521484 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 64  | 90th percentile: 1.537598 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 128 | 90th percentile: 1.493164 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 256 | 90th percentile: 1.488281 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 512 | 90th percentile: 1.523926 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 64  | 90th percentile: 1.536621 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 128 | 90th percentile: 1.527588 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 256 | 90th percentile: 1.522949 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 512 | 90th percentile: 1.543945 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 64  | 90th percentile: 1.539551 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 128 | 90th percentile: 1.550049 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 256 | 90th percentile: 1.621338 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 512 | 90th percentile: 1.654785 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 64  | 90th percentile: 2.503418 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 128 | 90th percentile: 2.305908 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 256 | 90th percentile: 2.637451 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 512 | 90th percentile: 2.746338 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 64  | 90th percentile: 2.920410 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 128 | 90th percentile: 2.811035 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 256 | 90th percentile: 3.097412 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 512 | 90th percentile: 2.605713 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 64  | 90th percentile: 2.939941 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 128 | 90th percentile: 3.160400 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 256 | 90th percentile: 3.029053 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 512 | 90th percentile: 3.235107 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 64  | 90th percentile: 3.140137 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 128 | 90th percentile: 2.999756 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 256 | 90th percentile: 3.034424 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 512 | 90th percentile: 2.994141 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 64  | 90th percentile: 3.030762 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 128 | 90th percentile: 2.674805 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 256 | 90th percentile: 2.914062 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 512 | 90th percentile: 2.845703 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 64  | 90th percentile: 3.039062 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 128 | 90th percentile: 2.933594 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 256 | 90th percentile: 2.934570 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 512 | 90th percentile: 3.015625 ms
+
+========================================
+Matrix: ./chimera_matrix.txt
+========================================
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 64  | 90th percentile: 8.706787 ms
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 128 | 90th percentile: 8.465332 ms
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 256 | 90th percentile: 8.685059 ms
+SELL-C | Threads: 2  | Chunk: 1   | Sigma: 512 | 90th percentile: 8.022705 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 64  | 90th percentile: 5.855957 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 128 | 90th percentile: 5.766602 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 256 | 90th percentile: 5.969971 ms
+SELL-C | Threads: 2  | Chunk: 2   | Sigma: 512 | 90th percentile: 5.680176 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 64  | 90th percentile: 5.388428 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 128 | 90th percentile: 5.503174 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 256 | 90th percentile: 5.528809 ms
+SELL-C | Threads: 2  | Chunk: 4   | Sigma: 512 | 90th percentile: 5.511230 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 64  | 90th percentile: 4.829590 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 128 | 90th percentile: 5.113770 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 256 | 90th percentile: 4.760498 ms
+SELL-C | Threads: 2  | Chunk: 8   | Sigma: 512 | 90th percentile: 4.793457 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 64  | 90th percentile: 4.896240 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 128 | 90th percentile: 4.676270 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 256 | 90th percentile: 4.682129 ms
+SELL-C | Threads: 2  | Chunk: 16  | Sigma: 512 | 90th percentile: 4.560547 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 64  | 90th percentile: 4.465820 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 128 | 90th percentile: 4.577393 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 256 | 90th percentile: 4.333252 ms
+SELL-C | Threads: 2  | Chunk: 32  | Sigma: 512 | 90th percentile: 4.427979 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 64  | 90th percentile: 6.413086 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 128 | 90th percentile: 6.100830 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 256 | 90th percentile: 6.179443 ms
+SELL-C | Threads: 4  | Chunk: 1   | Sigma: 512 | 90th percentile: 6.179688 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 64  | 90th percentile: 5.747559 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 128 | 90th percentile: 4.507324 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 256 | 90th percentile: 4.991699 ms
+SELL-C | Threads: 4  | Chunk: 2   | Sigma: 512 | 90th percentile: 4.546875 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 64  | 90th percentile: 4.282471 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 128 | 90th percentile: 4.281982 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 256 | 90th percentile: 4.009277 ms
+SELL-C | Threads: 4  | Chunk: 4   | Sigma: 512 | 90th percentile: 4.347656 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 64  | 90th percentile: 3.942139 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 128 | 90th percentile: 3.628418 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 256 | 90th percentile: 3.793701 ms
+SELL-C | Threads: 4  | Chunk: 8   | Sigma: 512 | 90th percentile: 3.739258 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 64  | 90th percentile: 4.295410 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 128 | 90th percentile: 4.316162 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 256 | 90th percentile: 4.264648 ms
+SELL-C | Threads: 4  | Chunk: 16  | Sigma: 512 | 90th percentile: 4.546143 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 64  | 90th percentile: 3.139648 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 128 | 90th percentile: 3.122314 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 256 | 90th percentile: 3.135986 ms
+SELL-C | Threads: 4  | Chunk: 32  | Sigma: 512 | 90th percentile: 3.166504 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 64  | 90th percentile: 6.681885 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 128 | 90th percentile: 4.784912 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 256 | 90th percentile: 4.453857 ms
+SELL-C | Threads: 8  | Chunk: 1   | Sigma: 512 | 90th percentile: 7.247559 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 64  | 90th percentile: 4.162598 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 128 | 90th percentile: 5.160156 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 256 | 90th percentile: 8.049072 ms
+SELL-C | Threads: 8  | Chunk: 2   | Sigma: 512 | 90th percentile: 7.053711 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 64  | 90th percentile: 3.495850 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 128 | 90th percentile: 3.583252 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 256 | 90th percentile: 4.128906 ms
+SELL-C | Threads: 8  | Chunk: 4   | Sigma: 512 | 90th percentile: 4.892334 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 64  | 90th percentile: 3.474365 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 128 | 90th percentile: 3.387451 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 256 | 90th percentile: 3.653320 ms
+SELL-C | Threads: 8  | Chunk: 8   | Sigma: 512 | 90th percentile: 3.142822 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 64  | 90th percentile: 4.657715 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 128 | 90th percentile: 4.366455 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 256 | 90th percentile: 3.623779 ms
+SELL-C | Threads: 8  | Chunk: 16  | Sigma: 512 | 90th percentile: 5.666504 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 64  | 90th percentile: 2.803467 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 128 | 90th percentile: 2.597656 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 256 | 90th percentile: 3.726318 ms
+SELL-C | Threads: 8  | Chunk: 32  | Sigma: 512 | 90th percentile: 3.213623 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 64  | 90th percentile: 5.245605 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 128 | 90th percentile: 5.008057 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 256 | 90th percentile: 5.780762 ms
+SELL-C | Threads: 16 | Chunk: 1   | Sigma: 512 | 90th percentile: 5.236816 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 64  | 90th percentile: 4.218506 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 128 | 90th percentile: 4.911621 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 256 | 90th percentile: 4.644531 ms
+SELL-C | Threads: 16 | Chunk: 2   | Sigma: 512 | 90th percentile: 4.454834 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 64  | 90th percentile: 4.144043 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 128 | 90th percentile: 4.643799 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 256 | 90th percentile: 4.502686 ms
+SELL-C | Threads: 16 | Chunk: 4   | Sigma: 512 | 90th percentile: 4.577148 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 64  | 90th percentile: 3.752197 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 128 | 90th percentile: 4.452393 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 256 | 90th percentile: 4.485840 ms
+SELL-C | Threads: 16 | Chunk: 8   | Sigma: 512 | 90th percentile: 4.674805 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 64  | 90th percentile: 4.626465 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 128 | 90th percentile: 4.782227 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 256 | 90th percentile: 4.909180 ms
+SELL-C | Threads: 16 | Chunk: 16  | Sigma: 512 | 90th percentile: 4.679688 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 64  | 90th percentile: 4.331787 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 128 | 90th percentile: 4.627441 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 256 | 90th percentile: 3.689941 ms
+SELL-C | Threads: 16 | Chunk: 32  | Sigma: 512 | 90th percentile: 3.750244 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 64  | 90th percentile: 7.647949 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 128 | 90th percentile: 7.279053 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 256 | 90th percentile: 7.643555 ms
+SELL-C | Threads: 32 | Chunk: 1   | Sigma: 512 | 90th percentile: 6.967285 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 64  | 90th percentile: 5.929443 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 128 | 90th percentile: 6.031494 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 256 | 90th percentile: 5.954590 ms
+SELL-C | Threads: 32 | Chunk: 2   | Sigma: 512 | 90th percentile: 6.360596 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 64  | 90th percentile: 7.880371 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 128 | 90th percentile: 5.348145 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 256 | 90th percentile: 5.683105 ms
+SELL-C | Threads: 32 | Chunk: 4   | Sigma: 512 | 90th percentile: 6.002686 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 64  | 90th percentile: 5.094238 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 128 | 90th percentile: 4.826416 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 256 | 90th percentile: 5.468994 ms
+SELL-C | Threads: 32 | Chunk: 8   | Sigma: 512 | 90th percentile: 5.541504 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 64  | 90th percentile: 5.535156 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 128 | 90th percentile: 5.561279 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 256 | 90th percentile: 5.071045 ms
+SELL-C | Threads: 32 | Chunk: 16  | Sigma: 512 | 90th percentile: 5.463867 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 64  | 90th percentile: 4.925049 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 128 | 90th percentile: 3.837646 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 256 | 90th percentile: 5.544434 ms
+SELL-C | Threads: 32 | Chunk: 32  | Sigma: 512 | 90th percentile: 8.352051 ms
+
+
+#################################################################
+                     SPEEDUP SUMMARY                            
+#################################################################
+
+Matrix               | Program            | PAR(ms)    | SEQ(ms)    | Speedup   
+1138_bus             | Sequential         | -          | 0.008      | 1.0       
+1138_bus             | MVM_parallel       | 0.004150   | 0.008      | 1.9277    
+1138_bus             | MVM_parallel_atomic | 0.004150   | 0.008      | 1.9277    
+1138_bus             | MVM_parallel_sellc | 0.024902   | 0.008      | .3212     
+adder_dcop_32        | Sequential         | -          | 0.017      | 1.0       
+adder_dcop_32        | MVM_parallel       | 0.008057   | 0.017      | 2.1099    
+adder_dcop_32        | MVM_parallel_atomic | 0.008301   | 0.017      | 2.0479    
+adder_dcop_32        | MVM_parallel_sellc | 0.068359   | 0.017      | .2486     
+bcsstk14             | Sequential         | -          | 0.044      | 1.0       
+bcsstk14             | MVM_parallel       | 0.010010   | 0.044      | 4.3956    
+bcsstk14             | MVM_parallel_atomic | 0.010010   | 0.044      | 4.3956    
+bcsstk14             | MVM_parallel_sellc | 0.087158   | 0.044      | .5048     
+rail_5177            | Sequential         | -          | 0.025      | 1.0       
+rail_5177            | MVM_parallel       | 0.009033   | 0.025      | 2.7676    
+rail_5177            | MVM_parallel_atomic | 0.010254   | 0.025      | 2.4380    
+rail_5177            | MVM_parallel_sellc | 0.110840   | 0.025      | .2255     
+chimera_matrix       | Sequential         | -          | 1.378      | 1.0       
+chimera_matrix       | MVM_parallel       | 0.394043   | 1.378      | 3.4970    
+chimera_matrix       | MVM_parallel_atomic | 0.347412   | 1.378      | 3.9664    
+chimera_matrix       | MVM_parallel_sellc | 2.597656   | 1.378      | .5304     
+
+Run data saved in: /tmp/mvm_runs
+Plot generated: speedup_plot.png
