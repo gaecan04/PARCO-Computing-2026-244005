@@ -1,0 +1,6 @@
+#Matrix Sequential MVM_parallel MVM_parallel_atomic MVM_parallel_sellc
+1138_bus 1 1.9277 1.9277 .3212
+adder_dcop_32 1 2.1099 2.0479 .2486
+bcsstk14 1 4.3956 4.3956 .5048
+rail_5177 1 2.7676 2.4380 .2255
+chimera_matrix 1 3.4970 3.9664 .5304
