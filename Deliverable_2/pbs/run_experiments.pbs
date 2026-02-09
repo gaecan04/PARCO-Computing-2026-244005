@@ -1,0 +1,141 @@
+#!/bin/bash
+#============================================
+# PBS (HPC3) — run SpMV experiments
+# - strong + weak scaling scripts
+# - robust module loading on HPC3
+#============================================
+
+# Job name
+#PBS -N spmv_exp
+
+# Queue (HPC3)
+#PBS -q shortCPUQ
+
+# Resources: 2 nodes, 64 cores each (adjust if your project requires)
+#PBS -l select=2:ncpus=64:mem=64gb
+
+# Walltime
+#PBS -l walltime=01:00:00
+
+# Join stdout and stderr
+#PBS -j oe
+
+# Put PBS output in submit dir
+#PBS -o spmv_exp.$PBS_JOBID.out
+
+set -euo pipefail
+
+cd "${PBS_O_WORKDIR}" || exit 1
+
+echo "WORKDIR: $PWD"
+echo "HOST: $(hostname)"
+echo "DATE: $(date)"
+echo
+
+# ----------------------------
+# Derive allocated resources
+# ----------------------------
+
+
+NODES=2
+CORES_PER_NODE=64
+export TOTAL_CORES=$((NODES * CORES_PER_NODE))
+
+echo "TOTAL_CORES=$TOTAL_CORES (NODES=$NODES, CORES_PER_NODE=$CORES_PER_NODE)"
+echo
+export NP_LIST="1 2 4 8 16 32 64"
+
+# ----------------------------
+# Modules (HPC3)
+# ----------------------------
+module purge
+
+# Try to load a GCC + MPI stack that exists on HPC3.
+# (This avoids hard-coding gcc91 which is only on HPC2.)
+try_module () {
+  local m="$1"
+  module load "$m" >/dev/null 2>&1 && echo "Loaded module: $m" && return 0
+  return 1
+}
+
+echo "Loading compiler + MPI modules..."
+# Prefer a common EasyBuild-style stack if present
+try_module "foss/2023a" || true
+
+# Otherwise try explicit GCC + OpenMPI
+try_module "GCC/12.3.0" || try_module "GCC/12.2.0" || try_module "GCC/11.3.0" || true
+try_module "OpenMPI/4.1.5" || try_module "OpenMPI/4.1.4" || try_module "OpenMPI" || true
+
+# Fallback: MPICH if OpenMPI not available
+if ! command -v mpicc >/dev/null 2>&1; then
+  try_module "MPICH" || true
+fi
+
+echo
+echo "Loaded modules:"
+module list || true
+echo
+
+# Check MPI compiler exists
+if ! command -v mpicc >/dev/null 2>&1; then
+  echo "ERROR: mpicc not found after loading modules."
+  echo "Run on login node:  module avail | egrep -i 'openmpi|mpich|mpi|gcc'"
+  exit 1
+fi
+
+# ----------------------------
+# Build
+# ----------------------------
+echo "Compiling spmv_mpi_openmp.c -> ./spmv_mpi_openmp"
+mpicc -O3 -fopenmp spmv_mpi_openmp.c -o spmv_mpi_openmp
+
+# ----------------------------
+# Result directory
+# ----------------------------
+STAMP=$(date +%Y%m%d_%H%M%S)
+OUTDIR="results_${STAMP}"
+mkdir -p "${OUTDIR}"
+
+echo
+echo "OUTDIR: ${OUTDIR}"
+echo
+
+# Save environment info
+{
+  echo "JOBID: ${PBS_JOBID:-N/A}"
+  echo "HOST: $(hostname)"
+  echo "DATE: $(date)"
+  echo "WORKDIR: $PWD"
+  echo
+  echo "MODULE LIST:"
+  module list 2>&1 || true
+  echo
+  echo "MPI:"
+  which mpicc || true
+  mpicc --version 2>&1 | head -n 5 || true
+  echo
+} > "${OUTDIR}/env.txt"
+
+# ----------------------------
+# Run strong + weak scripts
+# ----------------------------
+# Make sure scripts are executable
+chmod +x run_spmv_strong_scaling.sh run_spmv_weak_scaling.sh || true
+
+echo "Running STRONG scaling script..."
+./run_spmv_strong_scaling.sh > "${OUTDIR}/strong.out" 2>&1 || {
+  echo "ERROR: strong scaling script failed. See ${OUTDIR}/strong.out"
+  exit 1
+}
+
+echo "Running WEAK scaling script..."
+./run_spmv_weak_scaling.sh > "${OUTDIR}/weak.out" 2>&1 || {
+  echo "ERROR: weak scaling script failed. See ${OUTDIR}/weak.out"
+  exit 1
+}
+
+echo
+echo "DONE."
+echo "Strong log: ${OUTDIR}/strong.out"
+echo "Weak log:   ${OUTDIR}/weak.out"
+echo "Env:        ${OUTDIR}/env.txt"
